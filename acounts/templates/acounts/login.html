@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen & Pixel | Your Creative Space</title>
+    <link rel=" stylesheet" href= "{% static 'acounts/login.css'  %}">
+    <!-- Tailwind CSS CDN -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins for UI, Special Elite for Typewriter feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="{% static "acounts/main.js" %}"></script>
+
+
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 overflow-x-hidden">
+
+    <!-- Background Orbs -->
+    <div class="orb bg-purple-400 top-[-10%] left-[-10%]"></div>
+    <div class="orb bg-orange-200 bottom-[-10%] right-[-10%]" style="animation-delay: -5s;"></div>
+    <div class="orb bg-blue-300 top-[40%] left-[30%] opacity-20" style="animation-delay: -2s;"></div>
+
+    <!-- Main Container -->
+    <div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 h-full lg:h-[700px] rounded-[24px] overflow-hidden shadow-2xl relative">
+
+        <!-- Left Panel: Aesthetic Side -->
+        <div class="hidden lg:flex relative bg-gradient-to-br from-[#6C63FF] to-[#3F3D56] p-12 flex-col justify-between text-white overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 p-8 opacity-20">
+                <i data-lucide="pen-tool" class="w-32 h-32"></i>
+            </div>
+            <div class="absolute bottom-20 left-10 opacity-10">
+                <i data-lucide="book-open" class="w-48 h-48"></i>
+            </div>
+
+            <div class="relative z-10">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                        <!-- <i data-lucide="feather" class="text-[#6C63FF] w-6 h-6"></i> -->
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="lightBlue" class="size-6">
+                            <path fill-rule="evenodd" d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
+                    <span class="typewriter-font text-2xl font-bold tracking-tight">Company Management System</span>
+                </div>
+                <h1 class="typewriter-font text-5xl font-bold leading-tight mb-6">
+                    Manage Your  <span class="text-[#00ff88]">Company</span><br>
+                   The Easiest Way.
+                </h1>
+                <p class="text-purple-100 text-lg opacity-90 max-w-md leading-relaxed">
+                    A cozy digital corner for the modern writer. Join thousands of creators weaving magic with words.
+                </p>
+            </div>
+
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 text-sm opacity-70">
+                    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+</svg>
+ Best UI</span>
+                    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+</svg>
+ Easy To Use</span>
+                    <span class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path fill-rule="evenodd" d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
+</svg>
+ Distraction-free</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Forms Side -->
+        <div class="glass-panel relative flex items-center justify-center p-8 lg:p-16">
+
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="absolute top-6 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors">
+                <i data-lucide="sun" id="sunIcon" class="w-5 h-5 hidden dark:block text-yellow-400"></i>
+                <i data-lucide="moon" id="moonIcon" class="w-5 h-5 block dark:hidden text-gray-600"></i>
+            </button>
+
+            <div class="w-full max-w-md">
+                <!-- Toggle Switch -->
+                <div class="flex bg-gray-100 dark:bg-gray-800 p-1 rounded-xl mb-10">
+                    <button id="loginTab" class="flex-1 py-2 text-sm font-medium rounded-lg transition-all bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white">
+                        Login Here
+                    </button>
+                    <!-- <button id="registerTab" class="flex-1 py-2 text-sm font-medium rounded-lg transition-all text-gray-500 dark:text-gray-400">
+                        Register
+                    </button> -->
+                </div>
+
+                <!-- Login Form -->
+                <div id="loginForm" class="form-transition block">
+                    <div class="mb-8">
+                        <h2 class="typewriter-font text-3xl font-bold text-gray-800 dark:text-white mb-2">Welcome Back</h2>
+                        <p class="text-gray-500 dark:text-gray-400">Please enter your details to continue.</p>
+                    </div>
+
+                    <form id="loginSubmit" class="space-y-5">
+                        <div class="relative">
+                            <i data-lucide="user" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                            <input type="text" id="loginUser" placeholder="Username or Email"
+                                class="input-field w-full pl-12 pr-4 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                        </div>
+
+                        <div class="relative">
+                            <i data-lucide="lock" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="loginPass" placeholder="Password"
+                                class="input-field w-full pl-12 pr-12 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                            <button type="button" onclick="togglePass('loginPass')" class="absolute right-4 top-3.5 text-gray-400 hover:text-gray-600 transition-colors">
+                                <i data-lucide="eye" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+
+                        <!-- <div class="flex items-center justify-between text-sm">
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-[#6C63FF] focus:ring-[#6C63FF]">
+                                <span class="text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">Remember me</span>
+                            </label>
+                            <a href="#" class="text-[#6C63FF] font-medium hover:underline">Forgot password?</a>
+                        </div> -->
+
+                        <button type="submit" class="btn-primary w-full py-3 rounded-2xl text-white font-semibold flex items-center justify-center gap-2">
+                            <span>Sign In</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Register Form -->
+                <div id="registerForm" class="form-transition hidden opacity-0 translate-x-4">
+                    <div class="mb-8">
+                        <h2 class="typewriter-font text-3xl font-bold text-gray-800 dark:text-white mb-2">Join the Circle</h2>
+                        <p class="text-gray-500 dark:text-gray-400">Start your writing journey today.</p>
+                    </div>
+
+                    <form id="registerSubmit" class="space-y-4">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="relative">
+                                <i data-lucide="user" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                                <input type="text" id="regName" placeholder="Full Name"
+                                    class="input-field w-full pl-12 pr-4 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                            </div>
+                            <div class="relative">
+                                <i data-lucide="mail" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                                <input type="email" id="regEmail" placeholder="Email Address"
+                                    class="input-field w-full pl-12 pr-4 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                            </div>
+                            <div class="relative">
+                                <i data-lucide="hash" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                                <input type="text" id="regUser" placeholder="Username"
+                                    class="input-field w-full pl-12 pr-4 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <i data-lucide="lock" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="regPass" placeholder="Password"
+                                class="input-field w-full pl-12 pr-12 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                            <button type="button" onclick="togglePass('regPass')" class="absolute right-4 top-3.5 text-gray-400 hover:text-gray-600 transition-colors">
+                                <i data-lucide="eye" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+
+                        <!-- Password Strength Indicator -->
+                        <div class="px-1">
+                            <div class="flex justify-between text-xs mb-1 text-gray-500 dark:text-gray-400">
+                                <span>Password Strength</span>
+                                <span id="strengthText">Weak</span>
+                            </div>
+                            <div class="h-1.5 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div id="strengthBar" class="h-full w-0 bg-red-500 transition-all duration-300"></div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <i data-lucide="check-circle" class="absolute left-4 top-3.5 w-5 h-5 text-gray-400"></i>
+                            <input type="password" id="regConfirm" placeholder="Confirm Password"
+                                class="input-field w-full pl-12 pr-4 py-3 rounded-2xl outline-none text-gray-800 dark:text-white" required>
+                        </div>
+
+                        <div class="flex items-center gap-2 cursor-pointer group">
+                            <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-[#6C63FF] focus:ring-[#6C63FF]" required>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                                I agree to the <a href="#" class="text-[#6C63FF] hover:underline">Terms & Conditions</a>
+                            </span>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full py-3 rounded-2xl text-white font-semibold flex items-center justify-center gap-2">
+                            <span>Create Account</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Login -->
+                <div class="mt-8">
+                    <div class="relative flex items-center py-4">
+                        <div class="flex-grow border-t border-gray-200 dark:border-gray-700"></div>
+                        <span class="flex-shrink mx-4 text-xs text-gray-400 uppercase tracking-widest font-medium">or continue with</span>
+                        <div class="flex-grow border-t border-gray-200 dark:border-gray-700"></div>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mt-6">
+                        <button class="p-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-purple-400 transition-all">
+                            <img src="https://www.svgrepo.com/show/355037/google.svg" class="w-5 h-5" alt="Google">
+                        </button>
+                        <button class="p-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-purple-400 transition-all">
+                            <img src="https://www.svgrepo.com/show/512317/github-142.svg" class="w-5 h-5" alt="GitHub">
+                        </button>
+                        <button class="p-3 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-purple-400 transition-all">
+                            <img src="https://www.svgrepo.com/show/370202/twitter-logo.svg" class="w-5 h-5" alt="Twitter">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Notification -->
+    <div id="toast" class="fixed bottom-8 right-8 px-6 py-3 rounded-2xl bg-gray-900 text-white flex items-center gap-3 translate-y-20 opacity-0 transition-all duration-300 shadow-xl z-50">
+        <div class="w-5 h-5 rounded-full bg-[#00ff88] flex items-center justify-center">
+            <i data-lucide="check" class="w-3 h-3 text-black"></i>
+        </div>
+        <span id="toastMessage" class="text-sm font-medium">Action successful!</span>
+    </div>
+
+
+</body
+</html>
