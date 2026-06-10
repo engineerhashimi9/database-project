@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff & Project Management System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #2563eb; --primary-dark: #1d4ed8; --secondary: #64748b;
+            --success: #10b981; --danger: #ef4444; --warning: #f59e0b;
+            --bg: #f1f5f9; --card: #ffffff; --text: #1e293b; --border: #e2e8f0;
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed; left: 0; top: 0; width: 260px; height: 100vh;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            color: white; padding: 20px 0; overflow-y: auto; z-index: 100;
+        }
+        .sidebar h2 { padding: 0 20px 20px; font-size: 1.3rem; border-bottom: 1px solid #334155; }
+        .nav-item {
+            padding: 14px 20px; cursor: pointer; display: flex; align-items: center; gap: 12px;
+            transition: all 0.2s; border-left: 3px solid transparent;
+        }
+        .nav-item:hover { background: #334155; border-left-color: var(--primary); }
+        .nav-item.active { background: #334155; border-left-color: var(--primary); }
+        .nav-item svg { width: 20px; height: 20px; opacity: 0.8; }
+
+        /* Main Content */
+        .main { margin-left: 260px; padding: 24px; }
+        .header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid var(--border);
+        }
+        .header h1 { font-size: 1.8rem; color: var(--text); }
+        .btn {
+            padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;
+            font-size: 0.95rem; font-weight: 500; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+        .btn-success { background: var(--success); color: white; }
+        .btn-danger { background: var(--danger); color: white; }
+        .btn-warning { background: var(--warning); color: white; }
+        .btn-secondary { background: var(--secondary); color: white; }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px; margin-bottom: 24px;
+        }
+        .stat-card {
+            background: var(--card); padding: 20px; border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid var(--border);
+        }
+        .stat-card h3 { font-size: 0.875rem; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-card .value { font-size: 2rem; font-weight: 700; margin-top: 8px; color: var(--primary); }
+
+        /* Table */
+        .card {
+            background: var(--card); border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border); overflow: hidden;
+        }
+        .card-header {
+            padding: 16px 20px; border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .card-header h3 { font-size: 1.1rem; }
+        .search-box {
+            padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px;
+            width: 260px; font-size: 0.9rem; outline: none; transition: border 0.2s;
+        }
+        .search-box:focus { border-color: var(--primary); }
+
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 14px 20px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: #f8fafc; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--secondary); }
+        tr:hover { background: #f8fafc; }
+        .actions { display: flex; gap: 8px; }
+        .action-btn { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; font-weight: 500; }
+        .action-btn.edit { background: #dbeafe; color: var(--primary); }
+        .action-btn.delete { background: #fee2e2; color: var(--danger); }
+        .action-btn.view { background: #d1fae5; color: var(--success); }
+
+        /* Modal */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal {
+            background: var(--card); border-radius: 16px; width: 90%; max-width: 600px;
+            max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .modal-header {
+            padding: 20px 24px; border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .modal-header h2 { font-size: 1.25rem; }
+        .close-btn { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--secondary); }
+        .modal-body { padding: 24px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.9rem; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 10px 14px; border: 1px solid var(--border);
+            border-radius: 8px; font-size: 0.95rem; outline: none; transition: border 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--primary); }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+        .modal-footer {
+            padding: 16px 24px; border-top: 1px solid var(--border);
+            display: flex; justify-content: flex-end; gap: 12px;
+        }
+
+        /* Tab Content */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar { width: 60px; }
+            .sidebar h2 { display: none; }
+            .nav-item span { display: none; }
+            .main { margin-left: 60px; }
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Toast */
+        .toast-container { position: fixed; top: 20px; right: 20px; z-index: 2000; }
+        .toast {
+            padding: 14px 20px; border-radius: 10px; color: white; margin-bottom: 10px;
+            animation: slideIn 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .toast.success { background: var(--success); }
+        .toast.error { background: var(--danger); }
+        @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+        .badge { padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .badge-green { background: #d1fae5; color: #065f46; }
+        .badge-red { background: #fee2e2; color: #991b1b; }
+        .badge-blue { background: #dbeafe; color: #1e40af; }
+        .badge-yellow { background: #fef3c7; color: #92400e; }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar">
+    <h2>📊 Staff Manager</h2>
+    <div class="nav-item active" onclick="showTab('dashboard')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+        <span>Dashboard</span>
+    </div>
+    <div class="nav-item" onclick="showTab('staffs')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-12 0v1z"/></svg>
+        <span>Staffs</span>
+    </div>
+    <div class="nav-item" onclick="showTab('departments')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <span>Departments</span>
+    </div>
+    <div class="nav-item" onclick="showTab('jobs')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0124 12c0-3.259-.014-3.582-.037-4A2 2 0 0022 4.59V2a2 2 0 00-2-2h-2.75a.75.75 0 00-.75.75v1.5a.75.75 0 00.75.75H19v1.41a2 2 0 001.963 2.001z"/></svg>
+        <span>Jobs</span>
+    </div>
+    <div class="nav-item" onclick="showTab('projects')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        <span>Projects</span>
+    </div>
+    <div class="nav-item" onclick="showTab('project_records')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span>Project Records</span>
+    </div>
+    <div class="nav-item" onclick="showTab('daily_work')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Daily Work Reports</span>
+    </div>
+    <div class="nav-item" onclick="showTab('tasks')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        <span>Tasks</span>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="tab-content active">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <button class="btn btn-primary" onclick="refreshAll()">🔄 Refresh</button>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Staff</h3>
+                <div class="value" id="stat-staffs">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Departments</h3>
+                <div class="value" id="stat-depts">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Projects</h3>
+                <div class="value" id="stat-projects">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Tasks</h3>
+                <div class="value" id="stat-tasks">0</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><h3>Recent Activity</h3></div>
+            <table>
+                <thead><tr><th>Time</th><th>Action</th><th>Table</th><th>Details</th></tr></thead>
+                <tbody id="activity-log"><tr><td colspan="4" style="text-align:center;color:#94a3b8">No recent activity</td></tr></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- STAFFS -->
+    <div id="staffs" class="tab-content">
+        <div class="header">
+            <h1>Staff Management</h1>
+            <button class="btn btn-primary" onclick="openModal('staff')">+ Add Staff</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>All Staff Members</h3>
+                <input type="text" class="search-box" placeholder="Search staff..." onkeyup="searchTable('staffs-table', this.value)">
+            </div>
+            <table id="staffs-table">
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Lastname</th><th>Phone</th><th>Salary</th><th>Department</th><th>Job</th><th>Actions</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <div id="departments" class="tab-content">
+        <div class="header">
+            <h1>Departments</h1>
+            <button class="btn btn-primary" onclick="openModal('department')">+ Add Department</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>All Departments</h3>
+                <input type="text" class="search-box" placeholder="Search departments..." onkeyup="searchTable('depts-table', this.value)">
+            </div>
+            <table id="depts-table">
+                <thead><tr><th>ID</th><th>Department Name</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JOBS -->
+    <div id="jobs" class="tab-content">
+        <div class="header">
+            <h1>Job Positions</h1>
+            <button class="btn btn-primary" onclick="openModal('job')">+ Add Job</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>All Jobs</h3>
+                <input type="text" class="search-box" placeholder="Search jobs..." onkeyup="searchTable('jobs-table', this.value)">
+            </div>
+            <table id="jobs-table">
+                <thead><tr><th>ID</th><th>Job Title</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="tab-content">
+        <div class="header">
+            <h1>Projects</h1>
+            <button class="btn btn-primary" onclick="openModal('project')">+ Add Project</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>All Projects</h3>
+                <input type="text" class="search-box" placeholder="Search projects..." onkeyup="searchTable('projects-table', this.value)">
+            </div>
+            <table id="projects-table">
+                <thead><tr><th>ID</th><th>Project Name</th><th>Notes</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PROJECT RECORDS -->
+    <div id="project_records" class="tab-content">
+        <div class="header">
+            <h1>Project Records</h1>
+            <button class="btn btn-primary" onclick="openModal('project_record')">+ Assign Staff</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Staff Project Assignments</h3>
+                <input type="text" class="search-box" placeholder="Search records..." onkeyup="searchTable('records-table', this.value)">
+            </div>
+            <table id="records-table">
+                <thead><tr><th>ID</th><th>Staff</th><th>Project</th><th>Start Date</th><th>End Date</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- DAILY WORK REPORTS -->
+    <div id="daily_work" class="tab-content">
+        <div class="header">
+            <h1>Daily Work Reports</h1>
+            <button class="btn btn-primary" onclick="openModal('daily_work')">+ Add Report</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Work Hours Log</h3>
+                <input type="text" class="search-box" placeholder="Search reports..." onkeyup="searchTable('work-table', this.value)">
+            </div>
+            <table id="work-table">
+                <thead><tr><th>Staff</th><th>Project Record</th><th>Date</th><th>Hours</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- TASKS -->
+    <div id="tasks" class="tab-content">
+        <div class="header">
+            <h1>Tasks</h1>
+            <button class="btn btn-primary" onclick="openModal('task')">+ Add Task</button>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>All Tasks</h3>
+                <input type="text" class="search-box" placeholder="Search tasks..." onkeyup="searchTable('tasks-table', this.value)">
+            </div>
+            <table id="tasks-table">
+                <thead><tr><th>ID</th><th>Task</th><th>Status</th><th>Note</th><th>Actions</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h2 id="modal-title">Add New</h2>
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            <button class="btn btn-primary" onclick="saveForm()">Save</button>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+// ==================== CONFIG ====================
+// CHANGE THIS TO YOUR API ENDPOINT
+const API_BASE = 'http://localhost:3000/api'; // <-- UPDATE THIS
+
+// ==================== STATE ====================
+let currentTable = 'staffs';
+let editingId = null;
+let currentTab = 'dashboard';
+
+// ==================== DEMO DATA (Remove when connecting to real API) ====================
+const demoData = {
+    staffs: [
+        { st_id: 1, st_name: 'John', st_lastname: 'Doe', phone: '5550101', salary: 25, department: 1, job: 1 },
+        { st_id: 2, st_name: 'Jane', st_lastname: 'Smith', phone: '5550102', salary: 30, department: 2, job: 2 },
+    ],
+    departments: [
+        { dp_id: 1, dp_name: 'Engineering' },
+        { dp_id: 2, dp_name: 'Marketing' },
+    ],
+    jobs: [
+        { jb_id: 1, job: 'Developer' },
+        { jb_id: 2, job: 'Manager' },
+    ],
+    projects: [
+        { pr_id: 1, pr_name: 'Website Redesign', project_notes: 'Company website overhaul' },
+        { pr_id: 2, pr_name: 'Mobile App', project_notes: 'iOS and Android app' },
+    ],
+    project_records: [
+        { pjr_id: 1, st_id: 1, pr_id: 1, start_time: '2024-01-01', end_time: '2024-06-01' },
+    ],
+    daily_work_reports: [
+        { st_id: 1, pjr_id: 1, date: '2024-01-15', work_hour: 8 },
+    ],
+    tasks: [
+        { ts_id: 1, task: 'Design homepage', done: 0, task_note: 'Use Figma' },
+        { ts_id: 2, task: 'Setup database', done: 1, task_note: 'MySQL configured' },
+    ]
+};
+
+// ==================== NAVIGATION ====================
+function showTab(tab) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById(tab).classList.add('active');
+    event.currentTarget.classList.add('active');
+    currentTab = tab;
+    if (tab !== 'dashboard') loadTableData(tab);
+    else loadDashboard();
+}
+
+// ==================== API HELPERS ====================
+async function apiGet(endpoint) {
+    try {
+        const res = await fetch(`${API_BASE}/${endpoint}`);
+        if (!res.ok) throw new Error('API Error');
+        return await res.json();
+    } catch (e) {
+        // Fallback to demo data if API not connected
+        console.log('API not connected, using demo data');
+        return demoData[endpoint] || [];
+    }
+}
+
+async function apiPost(endpoint, data) {
+    try {
+        const res = await fetch(`${API_BASE}/${endpoint}`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data)
+        });
+        return await res.json();
+    } catch (e) {
+        showToast('API not connected. Data saved locally.', 'error');
+        return { success: true };
+    }
+}
+
+async function apiDelete(endpoint, id) {
+    try {
+        const res = await fetch(`${API_BASE}/${endpoint}/${id}`, { method: 'DELETE' });
+        return await res.json();
+    } catch (e) {
+        showToast('API not connected. Deleted locally.', 'error');
+        return { success: true };
+    }
+}
+
+// ==================== DASHBOARD ====================
+async function loadDashboard() {
+    const staffs = await apiGet('staffs');
+    const depts = await apiGet('departments');
+    const projects = await apiGet('projects');
+    const tasks = await apiGet('tasks');
+    document.getElementById('stat-staffs').textContent = staffs.length;
+    document.getElementById('stat-depts').textContent = depts.length;
+    document.getElementById('stat-projects').textContent = projects.length;
+    document.getElementById('stat-tasks').textContent = tasks.filter(t => !t.done).length;
+}
+
+// ==================== TABLE LOADING ====================
+async function loadTableData(table) {
+    currentTable = table === 'project_records' ? 'project_records' :
+                   table === 'daily_work' ? 'daily_work_reports' : table;
+
+    const data = await apiGet(currentTable);
+    const tbody = document.querySelector(`#${table === 'project_records' ? 'records' : table === 'daily_work' ? 'work' : table}-table tbody`);
+
+    if (!data || data.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="10" style="text-align:center;color:#94a3b8;padding:40px">No data available</td></tr>`;
+        return;
+    }
+
+    let html = '';
+    const depts = await apiGet('departments');
+    const jobs = await apiGet('jobs');
+    const staffs = await apiGet('staffs');
+    const projects = await apiGet('projects');
+    const records = await apiGet('project_records');
+
+    for (const row of data) {
+        html += generateRowHtml(table, row, { depts, jobs, staffs, projects, records });
+    }
+    tbody.innerHTML = html;
+}
+
+function generateRowHtml(table, row, lookups) {
+    const { depts, jobs, staffs, projects, records } = lookups;
+
+    switch(table) {
+        case 'staffs':
+            const dept = depts.find(d => d.dp_id == row.department);
+            const job = jobs.find(j => j.jb_id == row.job);
+            return `<tr>
+                <td>${row.st_id}</td>
+                <td>${row.st_name}</td>
+                <td>${row.st_lastname}</td>
+                <td>${row.phone || '-'}</td>
+                <td>$${row.salary}/hr</td>
+                <td><span class="badge badge-blue">${dept ? dept.dp_name : 'N/A'}</span></td>
+                <td><span class="badge badge-yellow">${job ? job.job : 'N/A'}</span></td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('staff', ${row.st_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('staffs', ${row.st_id})">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'departments':
+            return `<tr>
+                <td>${row.dp_id}</td>
+                <td>${row.dp_name}</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('department', ${row.dp_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('departments', ${row.dp_id})">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'jobs':
+            return `<tr>
+                <td>${row.jb_id}</td>
+                <td>${row.job}</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('job', ${row.jb_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('jobs', ${row.jb_id})">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'projects':
+            return `<tr>
+                <td>${row.pr_id}</td>
+                <td>${row.pr_name}</td>
+                <td>${row.project_notes || '-'}</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('project', ${row.pr_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('projects', ${row.pr_id})">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'project_records':
+            const staff = staffs.find(s => s.st_id == row.st_id);
+            const proj = projects.find(p => p.pr_id == row.pr_id);
+            return `<tr>
+                <td>${row.pjr_id}</td>
+                <td>${staff ? staff.st_name + ' ' + staff.st_lastname : 'N/A'}</td>
+                <td>${proj ? proj.pr_name : 'N/A'}</td>
+                <td>${row.start_time}</td>
+                <td>${row.end_time || 'Ongoing'}</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('project_record', ${row.pjr_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('project_records', ${row.pjr_id})">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'daily_work':
+            const wstaff = staffs.find(s => s.st_id == row.st_id);
+            const wrec = records.find(r => r.pjr_id == row.pjr_id);
+            const wproj = wrec ? projects.find(p => p.pr_id == wrec.pr_id) : null;
+            return `<tr>
+                <td>${wstaff ? wstaff.st_name : 'N/A'}</td>
+                <td>${wproj ? wproj.pr_name : 'N/A'}</td>
+                <td>${row.date}</td>
+                <td>${row.work_hour} hrs</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('daily_work', '${row.st_id}-${row.pjr_id}-${row.date}')">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('daily_work_reports', '${row.st_id}-${row.pjr_id}-${row.date}')">Delete</button>
+                </td>
+            </tr>`;
+
+        case 'tasks':
+            return `<tr>
+                <td>${row.ts_id}</td>
+                <td>${row.task}</td>
+                <td><span class="badge ${row.done ? 'badge-green' : 'badge-red'}">${row.done ? 'Done' : 'Pending'}</span></td>
+                <td>${row.task_note || '-'}</td>
+                <td class="actions">
+                    <button class="action-btn edit" onclick="editItem('task', ${row.ts_id})">Edit</button>
+                    <button class="action-btn delete" onclick="deleteItem('tasks', ${row.ts_id})">Delete</button>
+                </td>
+            </tr>`;
+    }
+    return '';
+}
+
+// ==================== MODALS & FORMS ====================
+const formConfigs = {
+    staff: {
+        title: 'Staff Member',
+        fields: [
+            { name: 'st_name', label: 'First Name', type: 'text', required: true },
+            { name: 'st_lastname', label: 'Last Name', type: 'text', required: true },
+            { name: 'phone', label: 'Phone', type: 'text' },
+            { name: 'salary', label: 'Salary (per hour)', type: 'number', required: true },
+            { name: 'department', label: 'Department', type: 'select', required: true, source: 'departments', valueField: 'dp_id', textField: 'dp_name' },
+            { name: 'job', label: 'Job', type: 'select', required: true, source: 'jobs', valueField: 'jb_id', textField: 'job' }
+        ]
+    },
+    department: {
+        title: 'Department',
+        fields: [
+            { name: 'dp_name', label: 'Department Name', type: 'text', required: true }
+        ]
+    },
+    job: {
+        title: 'Job',
+        fields: [
+            { name: 'job', label: 'Job Title', type: 'text', required: true }
+        ]
+    },
+    project: {
+        title: 'Project',
+        fields: [
+            { name: 'pr_name', label: 'Project Name', type: 'text', required: true },
+            { name: 'project_notes', label: 'Notes', type: 'textarea' }
+        ]
+    },
+    project_record: {
+        title: 'Project Assignment',
+        fields: [
+            { name: 'st_id', label: 'Staff', type: 'select', required: true, source: 'staffs', valueField: 'st_id', textField: 'st_name' },
+            { name: 'pr_id', label: 'Project', type: 'select', required: true, source: 'projects', valueField: 'pr_id', textField: 'pr_name' },
+            { name: 'start_time', label: 'Start Date', type: 'date', required: true },
+            { name: 'end_time', label: 'End Date', type: 'date' }
+        ]
+    },
+    daily_work: {
+        title: 'Daily Work Report',
+        fields: [
+            { name: 'st_id', label: 'Staff', type: 'select', required: true, source: 'staffs', valueField: 'st_id', textField: 'st_name' },
+            { name: 'pjr_id', label: 'Project Record', type: 'select', required: true, source: 'project_records', valueField: 'pjr_id', textField: 'pjr_id' },
+            { name: 'date', label: 'Date', type: 'date', required: true },
+            { name: 'work_hour', label: 'Hours Worked', type: 'number', required: true, min: 0, max: 24 }
+        ]
+    },
+    task: {
+        title: 'Task',
+        fields: [
+            { name: 'task', label: 'Task Description', type: 'text', required: true },
+            { name: 'done', label: 'Status', type: 'select', required: true, options: [{value:0, text:'Pending'}, {value:1, text:'Done'}] },
+            { name: 'task_note', label: 'Note', type: 'textarea' }
+        ]
+    }
+};
+
+async function openModal(type, editData = null) {
+    editingId = editData ? editData.id : null;
+    const config = formConfigs[type];
+    document.getElementById('modal-title').textContent = (editData ? 'Edit' : 'Add') + ' ' + config.title;
+
+    let html = '';
+    for (const field of config.fields) {
+        html += `<div class="form-group">`;
+        html += `<label>${field.label}${field.required ? ' *' : ''}</label>`;
+
+        if (field.type === 'select' && field.source) {
+            const data = await apiGet(field.source);
+            html += `<select name="${field.name}" ${field.required ? 'required' : ''}>`;
+            html += `<option value="">Select...</option>`;
+            for (const item of data) {
+                const selected = editData && editData[field.name] == item[field.valueField] ? 'selected' : '';
+                html += `<option value="${item[field.valueField]}" ${selected}>${item[field.textField]}</option>`;
+            }
+            html += `</select>`;
+        } else if (field.type === 'select' && field.options) {
+            html += `<select name="${field.name}" ${field.required ? 'required' : ''}>`;
+            for (const opt of field.options) {
+                const selected = editData && editData[field.name] == opt.value ? 'selected' : '';
+                html += `<option value="${opt.value}" ${selected}>${opt.text}</option>`;
+            }
+            html += `</select>`;
+        } else if (field.type === 'textarea') {
+            html += `<textarea name="${field.name}" ${field.required ? 'required' : ''}>${editData ? editData[field.name] || '' : ''}</textarea>`;
+        } else {
+            html += `<input type="${field.type}" name="${field.name}" value="${editData ? editData[field.name] || '' : ''}" ${field.required ? 'required' : ''} ${field.min !== undefined ? 'min="'+field.min+'"' : ''} ${field.max !== undefined ? 'max="'+field.max+'"' : ''}>`;
+        }
+        html += `</div>`;
+    }
+
+    document.getElementById('modal-body').innerHTML = html;
+    document.getElementById('modal-overlay').classList.add('active');
+}
+
+function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('active');
+    editingId = null;
+}
+
+async function saveForm() {
+    const config = formConfigs[currentTable === 'staffs' ? 'staff' : currentTable === 'departments' ? 'department' : currentTable === 'jobs' ? 'job' : currentTable === 'projects' ? 'project' : currentTable === 'project_records' ? 'project_record' : currentTable === 'daily_work_reports' ? 'daily_work' : 'task'];
+    const data = {};
+
+    for (const field of config.fields) {
+        const el = document.querySelector(`[name="${field.name}"]`);
+        if (el) {
+            let val = el.value;
+            if (field.type === 'number') val = parseFloat(val);
+            data[field.name] = val;
+        }
+    }
+
+    if (editingId) data.id = editingId;
+
+    const endpoint = currentTable === 'daily_work' ? 'daily_work_reports' : currentTable;
+    await apiPost(endpoint, data);
+    showToast('Saved successfully!', 'success');
+    closeModal();
+    loadTableData(currentTab);
+    if (currentTab === 'dashboard') loadDashboard();
+}
+
+// ==================== EDIT & DELETE ====================
+async function editItem(type, id) {
+    const table = type === 'staff' ? 'staffs' : type === 'department' ? 'departments' : type === 'job' ? 'jobs' : type === 'project' ? 'projects' : type === 'project_record' ? 'project_records' : type === 'daily_work' ? 'daily_work_reports' : 'tasks';
+    const data = await apiGet(table);
+    const item = data.find(d => d[Object.keys(d)[0]] == id);
+    if (item) {
+        item.id = id;
+        openModal(type, item);
+    }
+}
+
+async function deleteItem(table, id) {
+    if (!confirm('Are you sure you want to delete this item?')) return;
+    await apiDelete(table, id);
+    showToast('Deleted successfully!', 'success');
+    loadTableData(currentTab);
+    if (currentTab === 'dashboard') loadDashboard();
+}
+
+// ==================== SEARCH ====================
+function searchTable(tableId, query) {
+    const table = document.getElementById(tableId);
+    const rows = table.querySelectorAll('tbody tr');
+    query = query.toLowerCase();
+
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+    });
+}
+
+// ==================== TOAST ====================
+function showToast(message, type = 'success') {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerHTML = type === 'success' ? '✅ ' + message : '⚠️ ' + message;
+    container.appendChild(toast);
+    setTimeout(() => toast.remove(), 3000);
+}
+
+function refreshAll() {
+    loadDashboard();
+    showToast('Data refreshed!', 'success');
+}
+
+// ==================== INIT ====================
+document.addEventListener('DOMContentLoaded', () => {
+    loadDashboard();
+});
+
+// Close modal on overlay click
+document.getElementById('modal-overlay').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+});
+</script>
+
+</body>
+</html>
