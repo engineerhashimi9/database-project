@@ -14,3 +14,4 @@ def login(request):
 # newd.save()
 new = Jobs.objects.create(job="AI Engineer")
 new.save()
+# itis working
