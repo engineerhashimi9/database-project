@@ -68,9 +68,13 @@ WSGI_APPLICATION = "core.wsgi.application"
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'company',
+        'USER': 'root',
+        'PASSWORD': 'saftware@351',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -113,6 +117,7 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / 'acounts/static',
     BASE_DIR / 'dashboard/static',
-    BASE_DIR / 'employee/static',
+
 
 ]
+AUTH_USER_MODEL = "acounts.Users"

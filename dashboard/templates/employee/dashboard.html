@@ -1,0 +1,408 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff & Project Management System</title>
+    <link rel="stylesheet" href="{% static 'dashboard/style.css' %}" />
+    <script src="{% static 'dashboard/main.js' %}"></script>
+    <base target="_blank" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>📊 Staff Manager</h2>
+      <div class="nav-item active" onclick="showTab('dashboard')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+          />
+        </svg>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item" onclick="showTab('staffs')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-12 0v1z"
+          />
+        </svg>
+        <span>Staffs</span>
+      </div>
+      <div class="nav-item" onclick="showTab('departments')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+          />
+        </svg>
+        <span>Departments</span>
+      </div>
+      <div class="nav-item" onclick="showTab('jobs')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 13.255A23.931 23.931 0 0124 12c0-3.259-.014-3.582-.037-4A2 2 0 0022 4.59V2a2 2 0 00-2-2h-2.75a.75.75 0 00-.75.75v1.5a.75.75 0 00.75.75H19v1.41a2 2 0 001.963 2.001z"
+          />
+        </svg>
+        <span>Jobs</span>
+      </div>
+      <div class="nav-item" onclick="showTab('projects')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+          />
+        </svg>
+        <span>Projects</span>
+      </div>
+      <div class="nav-item" onclick="showTab('project_records')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          />
+        </svg>
+        <span>Project Records</span>
+      </div>
+      <div class="nav-item" onclick="showTab('daily_work')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <span>Daily Work Reports</span>
+      </div>
+      <div class="nav-item" onclick="showTab('tasks')">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+          />
+        </svg>
+        <span>Tasks</span>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- DASHBOARD -->
+      <div id="dashboard" class="tab-content active">
+        <div class="header">
+          <h1>Dashboard</h1>
+          <button class="btn btn-primary" onclick="refreshAll()">
+            🔄 Refresh
+          </button>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Total Staff</h3>
+            <div class="value" id="stat-staffs">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Departments</h3>
+            <div class="value" id="stat-depts">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Active Projects</h3>
+            <div class="value" id="stat-projects">0</div>
+          </div>
+          <div class="stat-card">
+            <h3>Pending Tasks</h3>
+            <div class="value" id="stat-tasks">0</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3>Recent Activity</h3></div>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Action</th>
+                <th>Table</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody id="activity-log">
+              <tr>
+                <td colspan="4" style="text-align: center; color: #94a3b8">
+                  No recent activity
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- STAFFS -->
+      <div id="staffs" class="tab-content">
+        <div class="header">
+          <h1>Staff Management</h1>
+          <button class="btn btn-primary" onclick="openModal('staff')">
+            + Add Staff
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>All Staff Members</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search staff..."
+              onkeyup="searchTable('staffs-table', this.value)"
+            />
+          </div>
+          <table id="staffs-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Salary</th>
+                <th>Department</th>
+                <th>Job</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DEPARTMENTS -->
+      <div id="departments" class="tab-content">
+        <div class="header">
+          <h1>Departments</h1>
+          <button class="btn btn-primary" onclick="openModal('department')">
+            + Add Department
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>All Departments</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search departments..."
+              onkeyup="searchTable('depts-table', this.value)"
+            />
+          </div>
+          <table id="depts-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Department Name</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- JOBS -->
+      <div id="jobs" class="tab-content">
+        <div class="header">
+          <h1>Job Positions</h1>
+          <button class="btn btn-primary" onclick="openModal('job')">
+            + Add Job
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>All Jobs</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search jobs..."
+              onkeyup="searchTable('jobs-table', this.value)"
+            />
+          </div>
+          <table id="jobs-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Job Title</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id="projects" class="tab-content">
+        <div class="header">
+          <h1>Projects</h1>
+          <button class="btn btn-primary" onclick="openModal('project')">
+            + Add Project
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>All Projects</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search projects..."
+              onkeyup="searchTable('projects-table', this.value)"
+            />
+          </div>
+          <table id="projects-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Project Name</th>
+                <th>Notes</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PROJECT RECORDS -->
+      <div id="project_records" class="tab-content">
+        <div class="header">
+          <h1>Project Records</h1>
+          <button class="btn btn-primary" onclick="openModal('project_record')">
+            + Assign Staff
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Staff Project Assignments</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search records..."
+              onkeyup="searchTable('records-table', this.value)"
+            />
+          </div>
+          <table id="records-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Staff</th>
+                <th>Project</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DAILY WORK REPORTS -->
+      <div id="daily_work" class="tab-content">
+        <div class="header">
+          <h1>Daily Work Reports</h1>
+          <button class="btn btn-primary" onclick="openModal('daily_work')">
+            + Add Report
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Work Hours Log</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search reports..."
+              onkeyup="searchTable('work-table', this.value)"
+            />
+          </div>
+          <table id="work-table">
+            <thead>
+              <tr>
+                <th>Staff</th>
+                <th>Project Record</th>
+                <th>Date</th>
+                <th>Hours</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TASKS -->
+      <div id="tasks" class="tab-content">
+        <div class="header">
+          <h1>Tasks</h1>
+          <button class="btn btn-primary" onclick="openModal('task')">
+            + Add Task
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>All Tasks</h3>
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search tasks..."
+              onkeyup="searchTable('tasks-table', this.value)"
+            />
+          </div>
+          <table id="tasks-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Note</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h2 id="modal-title">Add New</h2>
+          <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" onclick="closeModal()">
+            Cancel
+          </button>
+          <button class="btn btn-primary" onclick="saveForm()">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script></script>
+  </body>
+</html>
