@@ -70,6 +70,12 @@ class UsersManager(BaseUserManager):
     def create_customer(self, email, password, **kwargs):
         if not email:
             raise ValueError("email must be set!")
+        if kwargs["department"]:
+            kwargs["department"] = Department.objects.get(
+                dp_id=kwargs["department"])
+
+        if kwargs["job"]:
+            kwargs["job"] = Jobs.objects.get(jb_id=kwargs["job"])
         email = self.normalize_email(email)
         user = self.model(email=email, **kwargs)
         user.set_password(password)
@@ -103,7 +109,7 @@ class Users(AbstractBaseUser, PermissionsMixin):
     job = models.ForeignKey(
         Jobs, on_delete=models.SET_NULL, null=True, blank=True)
     hire_date = models.DateField(
-        auto_now=False, auto_now_add=False, null=True, blank=True)
+        auto_now_add=True, auto_now=False, null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
     created_date = models.DateField(auto_now_add=True)
     ####
@@ -111,7 +117,7 @@ class Users(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["name", "last_name",
-                       "birth_date", "phone", "salary", "department", "job", "hire_date"]
+                       "birth_date", "phone", "salary", "department", "job"]
     is_active = models.BooleanField(default=True)
     is_verified = models.BooleanField(default=False)
 
