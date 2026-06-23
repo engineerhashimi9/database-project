@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "dashboard",
-   
+
     "acounts",
 ]
 
@@ -72,7 +72,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'company',
         'USER': 'root',
-        'PASSWORD': 'saftware@351',
+        'PASSWORD': '197022',
         'HOST': 'localhost',
         'PORT': '3306',
     }

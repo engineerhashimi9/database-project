@@ -5,74 +5,74 @@ const API_BASE = 'http://localhost:3000/api';
 let currentTab = 'dashboard';
 let editingId = null;
 let currentTable = '';
-let demoMode = true;
+let demoMode = false;
 
 // ==================== DEMO DATA ====================
-const demoData = {
-    staffs: [
-        { st_id: 1, st_name: 'John', st_lastname: 'Doe', phone: '5550101', salary: 25, department: 1, job: 1, status: 'active', email: 'john@company.com' },
-        { st_id: 2, st_name: 'Jane', st_lastname: 'Smith', phone: '5550102', salary: 30, department: 2, job: 2, status: 'active', email: 'jane@company.com' },
-        { st_id: 3, st_name: 'Mike', st_lastname: 'Johnson', phone: '5550103', salary: 22, department: 1, job: 1, status: 'on_leave', email: 'mike@company.com' },
-        { st_id: 4, st_name: 'Sarah', st_lastname: 'Williams', phone: '5550104', salary: 35, department: 3, job: 3, status: 'active', email: 'sarah@company.com' },
-    ],
-    departments: [
-        { dp_id: 1, dp_name: 'Engineering', head_id: 1 },
-        { dp_id: 2, dp_name: 'Marketing', head_id: 2 },
-        { dp_id: 3, dp_name: 'Design', head_id: 4 },
-    ],
-    jobs: [
-        { jb_id: 1, job: 'Developer' },
-        { jb_id: 2, job: 'Marketing Manager' },
-        { jb_id: 3, job: 'Lead Designer' },
-        { jb_id: 4, job: 'Project Manager' },
-    ],
-    projects: [
-        { pr_id: 1, pr_name: 'Website Redesign', project_notes: 'Complete overhaul of company website', status: 'in_progress', completion: 65, dept_id: 1, start_date: '2026-01-15', end_date: '2026-06-30' },
-        { pr_id: 2, pr_name: 'Mobile App v2', project_notes: 'iOS and Android native apps', status: 'in_progress', completion: 40, dept_id: 1, start_date: '2026-02-01', end_date: '2026-08-15' },
-        { pr_id: 3, pr_name: 'Q2 Marketing Campaign', project_notes: 'Social media and email marketing', status: 'completed', completion: 100, dept_id: 2, start_date: '2026-03-01', end_date: '2026-05-30' },
-        { pr_id: 4, pr_name: 'Brand Identity', project_notes: 'New logo and brand guidelines', status: 'on_hold', completion: 20, dept_id: 3, start_date: '2026-04-01', end_date: '2026-07-15' },
-    ],
-    project_records: [
-        { pjr_id: 1, st_id: 1, pr_id: 1, start_time: '2026-01-15', end_time: null },
-        { pjr_id: 2, st_id: 2, pr_id: 3, start_time: '2026-03-01', end_time: '2026-05-30' },
-        { pjr_id: 3, st_id: 3, pr_id: 1, start_time: '2026-02-01', end_time: null },
-        { pjr_id: 4, st_id: 4, pr_id: 4, start_time: '2026-04-01', end_time: null },
-    ],
-    tasks: [
-        { ts_id: 1, task: 'Design homepage mockup', done: 1, task_note: 'Figma files ready', assigned_to: 4, project_id: 1, due_date: '2026-02-15' },
-        { ts_id: 2, task: 'Setup CI/CD pipeline', done: 0, task_note: 'GitHub Actions config needed', assigned_to: 1, project_id: 1, due_date: '2026-03-01' },
-        { ts_id: 3, task: 'Write API documentation', done: 0, task_note: 'Swagger setup', assigned_to: 3, project_id: 2, due_date: '2026-04-10' },
-        { ts_id: 4, task: 'Email template design', done: 1, task_note: 'Approved by client', assigned_to: 2, project_id: 3, due_date: '2026-04-01' },
-    ],
-    reports: [
-        { rp_id: 1, st_id: 1, title: 'Weekly Progress - Website', content: 'Completed 3 major features this week. Homepage responsive design is 90% done.', date: '2026-06-09', read: false, type: 'progress' },
-        { rp_id: 2, st_id: 2, title: 'Marketing Analytics Q2', content: 'Campaign reached 50K impressions. CTR improved by 12% compared to Q1.', date: '2026-06-08', read: false, type: 'analytics' },
-        { rp_id: 3, st_id: 3, title: 'Bug Report - Login Issue', content: 'Found critical bug in authentication flow. Needs immediate attention.', date: '2026-06-07', read: true, type: 'issue' },
-        { rp_id: 4, st_id: 4, title: 'Brand Guidelines Draft', content: 'First draft of brand guidelines completed. Awaiting review.', date: '2026-06-06', read: true, type: 'deliverable' },
-    ],
-    activities: [
-        { time: '10:30 AM', user: 'John Doe', action: 'Updated task', details: 'Homepage mockup marked complete', status: 'success' },
-        { time: '09:15 AM', user: 'Jane Smith', action: 'Submitted report', details: 'Marketing Analytics Q2', status: 'info' },
-        { time: 'Yesterday', user: 'Mike Johnson', action: 'Created task', details: 'API documentation task added', status: 'success' },
-        { time: 'Yesterday', user: 'Sarah Williams', action: 'Updated project', details: 'Brand Identity 20% complete', status: 'warning' },
-    ]
-};
+// const demoData = {
+//     staffs: [
+//         { st_id: 1, st_name: 'John', st_lastname: 'Doe', phone: '5550101', salary: 25, department: 1, job: 1, status: 'active', email: 'john@company.com' },
+//         { st_id: 2, st_name: 'Jane', st_lastname: 'Smith', phone: '5550102', salary: 30, department: 2, job: 2, status: 'active', email: 'jane@company.com' },
+//         { st_id: 3, st_name: 'Mike', st_lastname: 'Johnson', phone: '5550103', salary: 22, department: 1, job: 1, status: 'on_leave', email: 'mike@company.com' },
+//         { st_id: 4, st_name: 'Sarah', st_lastname: 'Williams', phone: '5550104', salary: 35, department: 3, job: 3, status: 'active', email: 'sarah@company.com' },
+//     ],
+//     departments: [
+//         { dp_id: 1, dp_name: 'Engineering', head_id: 1 },
+//         { dp_id: 2, dp_name: 'Marketing', head_id: 2 },
+//         { dp_id: 3, dp_name: 'Design', head_id: 4 },
+//     ],
+//     jobs: [
+//         { jb_id: 1, job: 'Developer' },
+//         { jb_id: 2, job: 'Marketing Manager' },
+//         { jb_id: 3, job: 'Lead Designer' },
+//         { jb_id: 4, job: 'Project Manager' },
+//     ],
+//     projects: [
+//         { pr_id: 1, pr_name: 'Website Redesign', project_notes: 'Complete overhaul of company website', status: 'in_progress', completion: 65, dept_id: 1, start_date: '2026-01-15', end_date: '2026-06-30' },
+//         { pr_id: 2, pr_name: 'Mobile App v2', project_notes: 'iOS and Android native apps', status: 'in_progress', completion: 40, dept_id: 1, start_date: '2026-02-01', end_date: '2026-08-15' },
+//         { pr_id: 3, pr_name: 'Q2 Marketing Campaign', project_notes: 'Social media and email marketing', status: 'completed', completion: 100, dept_id: 2, start_date: '2026-03-01', end_date: '2026-05-30' },
+//         { pr_id: 4, pr_name: 'Brand Identity', project_notes: 'New logo and brand guidelines', status: 'on_hold', completion: 20, dept_id: 3, start_date: '2026-04-01', end_date: '2026-07-15' },
+//     ],
+//     project_records: [
+//         { pjr_id: 1, st_id: 1, pr_id: 1, start_time: '2026-01-15', end_time: null },
+//         { pjr_id: 2, st_id: 2, pr_id: 3, start_time: '2026-03-01', end_time: '2026-05-30' },
+//         { pjr_id: 3, st_id: 3, pr_id: 1, start_time: '2026-02-01', end_time: null },
+//         { pjr_id: 4, st_id: 4, pr_id: 4, start_time: '2026-04-01', end_time: null },
+//     ],
+//     tasks: [
+//         { ts_id: 1, task: 'Design homepage mockup', done: 1, task_note: 'Figma files ready', assigned_to: 4, project_id: 1, due_date: '2026-02-15' },
+//         { ts_id: 2, task: 'Setup CI/CD pipeline', done: 0, task_note: 'GitHub Actions config needed', assigned_to: 1, project_id: 1, due_date: '2026-03-01' },
+//         { ts_id: 3, task: 'Write API documentation', done: 0, task_note: 'Swagger setup', assigned_to: 3, project_id: 2, due_date: '2026-04-10' },
+//         { ts_id: 4, task: 'Email template design', done: 1, task_note: 'Approved by client', assigned_to: 2, project_id: 3, due_date: '2026-04-01' },
+//     ],
+//     reports: [
+//         { rp_id: 1, st_id: 1, title: 'Weekly Progress - Website', content: 'Completed 3 major features this week. Homepage responsive design is 90% done.', date: '2026-06-09', read: false, type: 'progress' },
+//         { rp_id: 2, st_id: 2, title: 'Marketing Analytics Q2', content: 'Campaign reached 50K impressions. CTR improved by 12% compared to Q1.', date: '2026-06-08', read: false, type: 'analytics' },
+//         { rp_id: 3, st_id: 3, title: 'Bug Report - Login Issue', content: 'Found critical bug in authentication flow. Needs immediate attention.', date: '2026-06-07', read: true, type: 'issue' },
+//         { rp_id: 4, st_id: 4, title: 'Brand Guidelines Draft', content: 'First draft of brand guidelines completed. Awaiting review.', date: '2026-06-06', read: true, type: 'deliverable' },
+//     ],
+//     activities: [
+//         { time: '10:30 AM', user: 'John Doe', action: 'Updated task', details: 'Homepage mockup marked complete', status: 'success' },
+//         { time: '09:15 AM', user: 'Jane Smith', action: 'Submitted report', details: 'Marketing Analytics Q2', status: 'info' },
+//         { time: 'Yesterday', user: 'Mike Johnson', action: 'Created task', details: 'API documentation task added', status: 'success' },
+//         { time: 'Yesterday', user: 'Sarah Williams', action: 'Updated project', details: 'Brand Identity 20% complete', status: 'warning' },
+//     ]
+// };
 
 // ==================== API HELPERS ====================
-async function apiGet(endpoint) {
-    try {
-        const res = await fetch(`${API_BASE}/${endpoint}`, { method: 'GET', headers: { 'Accept': 'application/json' } });
-        if (!res.ok) throw new Error(`API Error: ${res.status}`);
-        demoMode = false;
-        return await res.json();
-    } catch (e) {
-        // Only set demoMode if it's a network error, not a server error
-        if (e.message.includes('fetch') || e.message.includes('NetworkError')) {
-            demoMode = true;
-        }
-        return demoData[endpoint] || [];
-    }
-}
+// async function apiGet(endpoint) {
+//     try {
+//         const res = await fetch(`${API_BASE}/${endpoint}`, { method: 'GET', headers: { 'Accept': 'application/json' } });
+//         if (!res.ok) throw new Error(`API Error: ${res.status}`);
+//         demoMode = false;
+//         return await res.json();
+//     } catch (e) {
+//         // Only set demoMode if it's a network error, not a server error
+//         if (e.message.includes('fetch') || e.message.includes('NetworkError')) {
+//             demoMode = true;
+//         }
+//         return demoData[endpoint] || [];
+//     }
+// }
 
 async function apiPost(endpoint, data) {
     try {
@@ -987,34 +987,34 @@ async function saveForm() {
 
     const endpoint = editingId ? `${currentFormConfig.table}/${editingId}` : currentFormConfig.table;
 
-    try {
-        if (demoMode) {
-            // Update demo data directly
-            const table = currentFormConfig.table;
-            if (editingId) {
-                const idx = demoData[table].findIndex(item => item[idField] == editingId);
-                if (idx !== -1) demoData[table][idx] = { ...demoData[table][idx], ...data };
-                addActivity(`Updated ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
-            } else {
-                const newId = Math.max(...demoData[table].map(item => item[idField] || 0), 0) + 1;
-                data[idField] = newId;
-                demoData[table].push(data);
-                addActivity(`Created ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
-            }
-            showToast(`${currentFormConfig.title} ${editingId ? 'updated' : 'created'} successfully`, 'success');
-        } else {
-            if (editingId) {
-                await apiPut(endpoint, data);
-            } else {
-                await apiPost(endpoint, data);
-            }
-            addActivity(`${editingId ? 'Updated' : 'Created'} ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
-            showToast(`${currentFormConfig.title} ${editingId ? 'updated' : 'created'} successfully`, 'success');
-        }
-    } catch (e) {
-        showToast('Error saving: ' + e.message, 'error');
-        return;
-    }
+    // try {
+    //     if (demoMode) {
+    //         // Update demo data directly
+    //         const table = currentFormConfig.table;
+    //         if (editingId) {
+    //             const idx = demoData[table].findIndex(item => item[idField] == editingId);
+    //             if (idx !== -1) demoData[table][idx] = { ...demoData[table][idx], ...data };
+    //             addActivity(`Updated ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
+    //         } else {
+    //             const newId = Math.max(...demoData[table].map(item => item[idField] || 0), 0) + 1;
+    //             data[idField] = newId;
+    //             demoData[table].push(data);
+    //             addActivity(`Created ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
+    //         }
+    //         showToast(`${currentFormConfig.title} ${editingId ? 'updated' : 'created'} successfully`, 'success');
+    //     } else {
+    //         if (editingId) {
+    //             await apiPut(endpoint, data);
+    //         } else {
+    //             await apiPost(endpoint, data);
+    //         }
+    //         addActivity(`${editingId ? 'Updated' : 'Created'} ${currentFormConfig.title.toLowerCase()}`, data[currentFormConfig.fields[0].name], 'success');
+    //         showToast(`${currentFormConfig.title} ${editingId ? 'updated' : 'created'} successfully`, 'success');
+    //     }
+    // } catch (e) {
+    //     showToast('Error saving: ' + e.message, 'error');
+    //     return;
+    // }
 
     closeModal();
     refreshCurrentTab();
@@ -1046,26 +1046,26 @@ async function deleteItem(table, id, itemName = '') {
 
     if (!confirm(`Are you sure you want to delete "${name}"?${warning}`)) return;
 
-    try {
-        if (demoMode) {
-            const idx = demoData[table].findIndex(item => {
-                const idField = Object.keys(item).find(k => k.endsWith('_id'));
-                return item[idField] == id;
-            });
-            if (idx !== -1) {
-                const deleted = demoData[table][idx];
-                demoData[table].splice(idx, 1);
-                addActivity(`Deleted ${table.replace('s', '')}`, name, 'warning');
-            }
-            showToast('Item deleted successfully', 'success');
-        } else {
-            await apiDelete(table, id);
-            addActivity(`Deleted ${table.replace('s', '')}`, name, 'warning');
-            showToast('Item deleted successfully', 'success');
-        }
-    } catch (e) {
-        showToast('Error deleting item', 'error');
-    }
+    // try {
+    //     if (demoMode) {
+    //         const idx = demoData[table].findIndex(item => {
+    //             const idField = Object.keys(item).find(k => k.endsWith('_id'));
+    //             return item[idField] == id;
+    //         });
+    //         if (idx !== -1) {
+    //             const deleted = demoData[table][idx];
+    //             demoData[table].splice(idx, 1);
+    //             addActivity(`Deleted ${table.replace('s', '')}`, name, 'warning');
+    //         }
+    //         showToast('Item deleted successfully', 'success');
+    //     } else {
+    //         await apiDelete(table, id);
+    //         addActivity(`Deleted ${table.replace('s', '')}`, name, 'warning');
+    //         showToast('Item deleted successfully', 'success');
+    //     }
+    // } catch (e) {
+    //     showToast('Error deleting item', 'error');
+    // }
 
     refreshCurrentTab();
 }
