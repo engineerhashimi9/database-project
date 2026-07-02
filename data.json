@@ -1,0 +1,5724 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2026-06-30T13:16:49.595Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "2-SE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2026-06-30T13:17:06.497Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "2-SE",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2026-06-30T13:17:22.760Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "3-SE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2026-06-30T16:21:48.550Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "not started",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2026-06-30T16:21:59.735Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "in progress",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2026-06-30T16:22:20.536Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "completed",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2026-06-30T16:22:26.541Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "completed",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2026-06-30T16:22:40.912Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "on hold",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2026-06-30T16:22:54.815Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "cancelled",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2026-06-30T16:24:52.510Z",
+            "user": 1,
+            "content_type": 2,
+            "object_id": "1",
+            "object_repr": "Managers",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2026-06-30T16:28:14.625Z",
+            "user": 1,
+            "content_type": 2,
+            "object_id": "2",
+            "object_repr": "developers",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2026-06-30T16:30:14.245Z",
+            "user": 1,
+            "content_type": 2,
+            "object_id": "3",
+            "object_repr": "Viewers",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2026-06-30T16:32:45.321Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "4-Physics",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2026-06-30T16:33:02.825Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "5-Chemistry",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2026-06-30T16:33:14.491Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "6-Math",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2026-06-30T16:33:24.627Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "7",
+            "object_repr": "7-Psychology",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2026-06-30T16:33:34.928Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "8",
+            "object_repr": "8-Biology",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2026-06-30T16:33:41.220Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "9-Pharmacy",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2026-06-30T16:34:10.809Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "10-Agriculture",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2026-06-30T16:34:20.693Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "11",
+            "object_repr": "11-Web",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2026-06-30T16:34:34.113Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "12",
+            "object_repr": "12-Database",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2026-06-30T16:34:44.664Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "13-Network",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2026-06-30T16:35:13.696Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "manager",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2026-06-30T16:36:04.211Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "manager",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2026-06-30T16:36:04.211Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "developer",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2026-06-30T16:36:10.515Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "manager",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2026-06-30T16:36:26.664Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "4",
+            "object_repr": "developer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2026-06-30T16:36:47.976Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "5",
+            "object_repr": "co_developer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2026-06-30T16:37:19.346Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "6",
+            "object_repr": "supervisor",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2026-06-30T16:37:30.627Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "7",
+            "object_repr": "headmaster",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2026-06-30T16:37:46.528Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "8",
+            "object_repr": "marketer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2026-06-30T16:38:30.072Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "9",
+            "object_repr": "sales_assistant",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2026-06-30T16:39:07.157Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "technisian",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2026-06-30T16:39:26.496Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "10",
+            "object_repr": "technisian",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2026-06-30T16:39:37.499Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "11",
+            "object_repr": "chef",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2026-06-30T16:39:41.584Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "12",
+            "object_repr": "cook",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2026-06-30T16:40:12.258Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "waiter",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2026-06-30T16:40:37.492Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "14",
+            "object_repr": "guard",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2026-06-30T16:40:45.526Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "chairman",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2026-06-30T16:40:52.954Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "15",
+            "object_repr": "chairman",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2026-06-30T16:51:59.226Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "ali@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2026-06-30T16:55:31.500Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "3",
+            "object_repr": "ahmad@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2026-06-30T16:56:43.427Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "sara@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2026-06-30T16:58:00.221Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "5",
+            "object_repr": "rahim@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2026-07-02T07:24:03.336Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "6",
+            "object_repr": "hassan@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2026-07-02T07:25:39.502Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "7",
+            "object_repr": "fahim@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2026-07-02T07:27:15.193Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "8",
+            "object_repr": "jamshed@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2026-07-02T07:28:42.238Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "9",
+            "object_repr": "mohammad@company.com",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2026-07-02T07:29:12.851Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "9",
+            "object_repr": "mohammad@company.com",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2026-07-02T07:29:48.654Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "9",
+            "object_repr": "mohammad@company.com",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2026-07-02T07:36:01.859Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "E-commerce website",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2026-07-02T07:37:02.090Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Mobile banking app",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2026-07-02T07:38:40.105Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Inventory System",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2026-07-02T07:40:29.631Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "CRM dashboard",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2026-07-02T07:41:47.863Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "HR portal",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2026-07-02T07:43:53.430Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "Study app",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2026-07-02T07:45:17.195Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Project_assignment object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2026-07-02T07:45:48.942Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Project_assignment object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2026-07-02T07:47:58.701Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Project_assignment object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2026-07-02T07:48:42.903Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "Project_assignment object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2026-07-02T07:49:24.209Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "Project_assignment object (5)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2026-07-02T07:49:50.490Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "6",
+            "object_repr": "Project_assignment object (6)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2026-07-02T07:53:27.834Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Design DB schema",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2026-07-02T07:54:45.181Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "Build login API",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2026-07-02T07:56:00.808Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "Payment Gateway",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2026-07-02T07:56:47.421Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "UI mockups",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2026-07-02T07:57:38.693Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "security audit",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2026-07-02T07:58:22.186Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "Generate reports",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2026-07-02T07:59:15.729Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "Build login API",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2026-07-02T08:04:07.736Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "4",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2026-07-02T08:05:09.276Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "5",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2026-07-02T08:05:48.729Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "6",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2026-07-02T08:06:27.575Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "7",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2026-07-02T08:07:02.413Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "8",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2026-07-02T08:07:24.021Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "9",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2026-07-02T08:59:05.798Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "13",
+            "object_repr": "waiter",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2026-07-02T09:16:58.015Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "10",
+            "object_repr": "None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 3,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 3,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 3,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 3,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 2,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 2,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 2,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 2,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add users",
+            "content_type": 13,
+            "codename": "add_users"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change users",
+            "content_type": 13,
+            "codename": "change_users"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete users",
+            "content_type": 13,
+            "codename": "delete_users"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view users",
+            "content_type": 13,
+            "codename": "view_users"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add jobs",
+            "content_type": 8,
+            "codename": "add_jobs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change jobs",
+            "content_type": 8,
+            "codename": "change_jobs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete jobs",
+            "content_type": 8,
+            "codename": "delete_jobs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view jobs",
+            "content_type": 8,
+            "codename": "view_jobs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add projects",
+            "content_type": 10,
+            "codename": "add_projects"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change projects",
+            "content_type": 10,
+            "codename": "change_projects"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete projects",
+            "content_type": 10,
+            "codename": "delete_projects"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view projects",
+            "content_type": 10,
+            "codename": "view_projects"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add status",
+            "content_type": 11,
+            "codename": "add_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change status",
+            "content_type": 11,
+            "codename": "change_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete status",
+            "content_type": 11,
+            "codename": "delete_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view status",
+            "content_type": 11,
+            "codename": "view_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add department",
+            "content_type": 7,
+            "codename": "add_department"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change department",
+            "content_type": 7,
+            "codename": "change_department"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete department",
+            "content_type": 7,
+            "codename": "delete_department"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view department",
+            "content_type": 7,
+            "codename": "view_department"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add project_assignment",
+            "content_type": 9,
+            "codename": "add_project_assignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change project_assignment",
+            "content_type": 9,
+            "codename": "change_project_assignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete project_assignment",
+            "content_type": 9,
+            "codename": "delete_project_assignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view project_assignment",
+            "content_type": 9,
+            "codename": "view_project_assignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add daily_work_report",
+            "content_type": 6,
+            "codename": "add_daily_work_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change daily_work_report",
+            "content_type": 6,
+            "codename": "change_daily_work_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete daily_work_report",
+            "content_type": 6,
+            "codename": "delete_daily_work_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view daily_work_report",
+            "content_type": 6,
+            "codename": "view_daily_work_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add task",
+            "content_type": 12,
+            "codename": "add_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change task",
+            "content_type": 12,
+            "codename": "change_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete task",
+            "content_type": 12,
+            "codename": "delete_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view task",
+            "content_type": 12,
+            "codename": "view_task"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Managers",
+            "permissions": [
+                45, 46, 47, 48, 37, 38, 39, 40, 25, 26, 27, 28, 41, 42, 43, 44,
+                29, 30, 31, 32, 33, 34, 35, 36, 49, 50, 51, 52, 21, 22, 23, 24,
+                1, 2, 3, 4, 9, 10, 11, 12, 5, 6, 7, 8, 13, 14, 15, 16, 17, 18,
+                19, 20
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 2,
+        "fields": {
+            "name": "developers",
+            "permissions": [45, 46, 48, 41, 42, 44, 29, 30, 32, 49, 50, 52]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 3,
+        "fields": {
+            "name": "Viewers",
+            "permissions": [48, 40, 28, 44, 32, 36, 52, 24, 16, 20]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 4,
+        "fields": { "name": "Group 4", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 5,
+        "fields": { "name": "Group 5", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 6,
+        "fields": { "name": "Group 6", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 7,
+        "fields": { "name": "Group 7", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 8,
+        "fields": { "name": "Group 8", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 9,
+        "fields": { "name": "Group 9", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 10,
+        "fields": { "name": "Group 10", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 11,
+        "fields": { "name": "Group 11", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 12,
+        "fields": { "name": "Group 12", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 13,
+        "fields": { "name": "Group 13", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 14,
+        "fields": { "name": "Group 14", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 15,
+        "fields": { "name": "Group 15", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 16,
+        "fields": { "name": "Group 16", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 17,
+        "fields": { "name": "Group 17", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 18,
+        "fields": { "name": "Group 18", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 19,
+        "fields": { "name": "Group 19", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 20,
+        "fields": { "name": "Group 20", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 21,
+        "fields": { "name": "Group 21", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 22,
+        "fields": { "name": "Group 22", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 23,
+        "fields": { "name": "Group 23", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 24,
+        "fields": { "name": "Group 24", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 25,
+        "fields": { "name": "Group 25", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 26,
+        "fields": { "name": "Group 26", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 27,
+        "fields": { "name": "Group 27", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 28,
+        "fields": { "name": "Group 28", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 29,
+        "fields": { "name": "Group 29", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 30,
+        "fields": { "name": "Group 30", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 31,
+        "fields": { "name": "Group 31", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 32,
+        "fields": { "name": "Group 32", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 33,
+        "fields": { "name": "Group 33", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 34,
+        "fields": { "name": "Group 34", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 35,
+        "fields": { "name": "Group 35", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 36,
+        "fields": { "name": "Group 36", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 37,
+        "fields": { "name": "Group 37", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 38,
+        "fields": { "name": "Group 38", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 39,
+        "fields": { "name": "Group 39", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 40,
+        "fields": { "name": "Group 40", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 41,
+        "fields": { "name": "Group 41", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 42,
+        "fields": { "name": "Group 42", "permissions": [] }
+    },
+    {
+        "model": "auth.group",
+        "pk": 43,
+        "fields": { "name": "Group 43", "permissions": [] }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": { "app_label": "admin", "model": "logentry" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": { "app_label": "auth", "model": "group" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": { "app_label": "auth", "model": "permission" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": { "app_label": "contenttypes", "model": "contenttype" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": { "app_label": "sessions", "model": "session" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": { "app_label": "acounts", "model": "daily_work_report" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": { "app_label": "acounts", "model": "department" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": { "app_label": "acounts", "model": "jobs" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": { "app_label": "acounts", "model": "project_assignment" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": { "app_label": "acounts", "model": "projects" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": { "app_label": "acounts", "model": "status" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": { "app_label": "acounts", "model": "task" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": { "app_label": "acounts", "model": "users" }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "1gxu5vvkq7khwjguumpszzb0f0k50wf8",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pBBYCgu3fcMDcxMpWpoUtqV8e7apAvd_vfef6khbWsZtibLMLG6KKNOv1tO9JC6A76neps1zXVdpqx3RR-06X5meV4P9--gpFa-tXfINAIYys7EgADkO4N-DMFKJB4lc5fRngWdyRA9WgmClhxwYojq_QHUbjek:1wfBir:s8bLv28dTz_SfJ08UY7lFBJ9SKq_sAVe-NwYqkQjz0M",
+            "expire_date": "2026-07-16T07:20:33.433Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3sqywj8vlhfvi1nk8ndqihowokkyai1a",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pBBYCgu3fcMDcxMpWpoUtqV8e7apAvd_vfef6khbWsZtibLMLG6KKNOv1tO9JC6A76neps1zXVdpqx3RR-06X5meV4P9--gpFa-tXfINAIYys7EgADkO4N-DMFKJB4lc5fRngWdyRA9WgmClhxwYojq_QHUbjek:1weYC5:pe1CwP_e4dAbnaBo68QzoeRzm-uu_Biw1fByWSkoAJQ",
+            "expire_date": "2026-07-14T13:08:05.211Z"
+        }
+    },
+    {
+        "model": "acounts.status",
+        "pk": 1,
+        "fields": { "status": "not started" }
+    },
+    {
+        "model": "acounts.status",
+        "pk": 2,
+        "fields": { "status": "in progress" }
+    },
+    { "model": "acounts.status", "pk": 3, "fields": { "status": "completed" } },
+    { "model": "acounts.status", "pk": 4, "fields": { "status": "on hold" } },
+    { "model": "acounts.status", "pk": 5, "fields": { "status": "cancelled" } },
+    { "model": "acounts.status", "pk": 6, "fields": { "status": "Pending" } },
+    {
+        "model": "acounts.status",
+        "pk": 7,
+        "fields": { "status": "In Progress" }
+    },
+    { "model": "acounts.status", "pk": 8, "fields": { "status": "Completed" } },
+    { "model": "acounts.status", "pk": 9, "fields": { "status": "Cancelled" } },
+    { "model": "acounts.status", "pk": 10, "fields": { "status": "On Hold" } },
+    { "model": "acounts.status", "pk": 11, "fields": { "status": "Approved" } },
+    { "model": "acounts.status", "pk": 12, "fields": { "status": "Rejected" } },
+    { "model": "acounts.status", "pk": 13, "fields": { "status": "Draft" } },
+    { "model": "acounts.status", "pk": 14, "fields": { "status": "Archived" } },
+    { "model": "acounts.status", "pk": 15, "fields": { "status": "Active" } },
+    {
+        "model": "acounts.projects",
+        "pk": 1,
+        "fields": {
+            "project_name": "E-commerce website",
+            "description": "Build a full-stack e-commerce website with payment integration",
+            "budget": "6000.00",
+            "start_date": "2026-03-02",
+            "end_date": "2026-07-02",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 2,
+        "fields": {
+            "project_name": "Mobile banking app",
+            "description": "Develop a secure mobile banking application for iOS and Android",
+            "budget": "9000.00",
+            "start_date": "2026-01-02",
+            "end_date": "2026-07-02",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 3,
+        "fields": {
+            "project_name": "Inventory System",
+            "description": "Create an internal inventory management system",
+            "budget": "20000.00",
+            "start_date": "2025-02-22",
+            "end_date": "2026-02-23",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 4,
+        "fields": {
+            "project_name": "CRM dashboard",
+            "description": "Build a customer relationship management dashboard",
+            "budget": "8000.00",
+            "start_date": "2023-04-21",
+            "end_date": "2025-02-23",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 5,
+        "fields": {
+            "project_name": "HR portal",
+            "description": "Employee self-service portal for leave and payroll",
+            "budget": "10000.00",
+            "start_date": "2023-07-12",
+            "end_date": "2025-05-17",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 6,
+        "fields": {
+            "project_name": "Study app",
+            "description": "Migrate to digital studying system",
+            "budget": "8000.00",
+            "start_date": "2022-03-14",
+            "end_date": "2026-07-02",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 7,
+        "fields": {
+            "project_name": "Project 7",
+            "description": "Description for project 7",
+            "budget": "70000.00",
+            "start_date": "2023-07-01",
+            "end_date": "2024-07-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 8,
+        "fields": {
+            "project_name": "Project 8",
+            "description": "Description for project 8",
+            "budget": "71000.00",
+            "start_date": "2023-08-01",
+            "end_date": "2024-08-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 9,
+        "fields": {
+            "project_name": "Project 9",
+            "description": "Description for project 9",
+            "budget": "72000.00",
+            "start_date": "2023-09-01",
+            "end_date": "2024-09-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 10,
+        "fields": {
+            "project_name": "Project 10",
+            "description": "Description for project 10",
+            "budget": "73000.00",
+            "start_date": "2023-10-01",
+            "end_date": "2024-10-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 11,
+        "fields": {
+            "project_name": "Project 11",
+            "description": "Description for project 11",
+            "budget": "74000.00",
+            "start_date": "2023-11-01",
+            "end_date": "2024-11-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 12,
+        "fields": {
+            "project_name": "Project 12",
+            "description": "Description for project 12",
+            "budget": "75000.00",
+            "start_date": "2023-12-01",
+            "end_date": "2024-12-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 13,
+        "fields": {
+            "project_name": "Project 13",
+            "description": "Description for project 13",
+            "budget": "76000.00",
+            "start_date": "2024-01-01",
+            "end_date": "2025-01-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 14,
+        "fields": {
+            "project_name": "Project 14",
+            "description": "Description for project 14",
+            "budget": "77000.00",
+            "start_date": "2024-02-01",
+            "end_date": "2025-02-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 15,
+        "fields": {
+            "project_name": "Project 15",
+            "description": "Description for project 15",
+            "budget": "78000.00",
+            "start_date": "2024-03-01",
+            "end_date": "2025-03-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 16,
+        "fields": {
+            "project_name": "Project 16",
+            "description": "Description for project 16",
+            "budget": "79000.00",
+            "start_date": "2024-04-01",
+            "end_date": "2025-04-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 17,
+        "fields": {
+            "project_name": "Project 17",
+            "description": "Description for project 17",
+            "budget": "70000.00",
+            "start_date": "2023-07-01",
+            "end_date": "2024-07-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 18,
+        "fields": {
+            "project_name": "Project 18",
+            "description": "Description for project 18",
+            "budget": "71000.00",
+            "start_date": "2023-08-01",
+            "end_date": "2024-08-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 19,
+        "fields": {
+            "project_name": "Project 19",
+            "description": "Description for project 19",
+            "budget": "72000.00",
+            "start_date": "2023-09-01",
+            "end_date": "2024-09-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 20,
+        "fields": {
+            "project_name": "Project 20",
+            "description": "Description for project 20",
+            "budget": "73000.00",
+            "start_date": "2023-10-01",
+            "end_date": "2024-10-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 21,
+        "fields": {
+            "project_name": "Project 21",
+            "description": "Description for project 21",
+            "budget": "74000.00",
+            "start_date": "2023-11-01",
+            "end_date": "2024-11-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 22,
+        "fields": {
+            "project_name": "Project 22",
+            "description": "Description for project 22",
+            "budget": "75000.00",
+            "start_date": "2023-12-01",
+            "end_date": "2024-12-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 23,
+        "fields": {
+            "project_name": "Project 23",
+            "description": "Description for project 23",
+            "budget": "76000.00",
+            "start_date": "2024-01-01",
+            "end_date": "2025-01-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 24,
+        "fields": {
+            "project_name": "Project 24",
+            "description": "Description for project 24",
+            "budget": "77000.00",
+            "start_date": "2024-02-01",
+            "end_date": "2025-02-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 25,
+        "fields": {
+            "project_name": "Project 25",
+            "description": "Description for project 25",
+            "budget": "78000.00",
+            "start_date": "2024-03-01",
+            "end_date": "2025-03-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 26,
+        "fields": {
+            "project_name": "Project 26",
+            "description": "Description for project 26",
+            "budget": "79000.00",
+            "start_date": "2024-04-01",
+            "end_date": "2025-04-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 27,
+        "fields": {
+            "project_name": "Project 27",
+            "description": "Description for project 27",
+            "budget": "80000.00",
+            "start_date": "2024-05-01",
+            "end_date": "2025-05-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 28,
+        "fields": {
+            "project_name": "Project 28",
+            "description": "Description for project 28",
+            "budget": "81000.00",
+            "start_date": "2024-06-01",
+            "end_date": "2025-06-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 29,
+        "fields": {
+            "project_name": "Project 29",
+            "description": "Description for project 29",
+            "budget": "82000.00",
+            "start_date": "2024-07-01",
+            "end_date": "2025-07-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 30,
+        "fields": {
+            "project_name": "Project 30",
+            "description": "Description for project 30",
+            "budget": "83000.00",
+            "start_date": "2024-08-01",
+            "end_date": "2025-08-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 31,
+        "fields": {
+            "project_name": "Project 31",
+            "description": "Description for project 31",
+            "budget": "84000.00",
+            "start_date": "2024-09-01",
+            "end_date": "2025-09-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 32,
+        "fields": {
+            "project_name": "Project 32",
+            "description": "Description for project 32",
+            "budget": "85000.00",
+            "start_date": "2024-10-01",
+            "end_date": "2025-10-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 33,
+        "fields": {
+            "project_name": "Project 33",
+            "description": "Description for project 33",
+            "budget": "86000.00",
+            "start_date": "2024-11-01",
+            "end_date": "2025-11-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 34,
+        "fields": {
+            "project_name": "Project 34",
+            "description": "Description for project 34",
+            "budget": "87000.00",
+            "start_date": "2024-12-01",
+            "end_date": "2025-12-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 35,
+        "fields": {
+            "project_name": "Project 35",
+            "description": "Description for project 35",
+            "budget": "88000.00",
+            "start_date": "2025-01-01",
+            "end_date": "2026-01-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 36,
+        "fields": {
+            "project_name": "Project 36",
+            "description": "Description for project 36",
+            "budget": "89000.00",
+            "start_date": "2025-02-01",
+            "end_date": "2026-02-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 37,
+        "fields": {
+            "project_name": "Project 37",
+            "description": "Description for project 37",
+            "budget": "90000.00",
+            "start_date": "2025-03-01",
+            "end_date": "2026-03-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 38,
+        "fields": {
+            "project_name": "Project 38",
+            "description": "Description for project 38",
+            "budget": "91000.00",
+            "start_date": "2025-04-01",
+            "end_date": "2026-04-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 39,
+        "fields": {
+            "project_name": "Project 39",
+            "description": "Description for project 39",
+            "budget": "92000.00",
+            "start_date": "2025-05-01",
+            "end_date": "2026-05-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 40,
+        "fields": {
+            "project_name": "Project 40",
+            "description": "Description for project 40",
+            "budget": "93000.00",
+            "start_date": "2025-06-01",
+            "end_date": "2026-06-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 41,
+        "fields": {
+            "project_name": "Project 41",
+            "description": "Description for project 41",
+            "budget": "94000.00",
+            "start_date": "2025-07-01",
+            "end_date": "2026-07-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 42,
+        "fields": {
+            "project_name": "Project 42",
+            "description": "Description for project 42",
+            "budget": "95000.00",
+            "start_date": "2025-08-01",
+            "end_date": "2026-08-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 43,
+        "fields": {
+            "project_name": "Project 43",
+            "description": "Description for project 43",
+            "budget": "96000.00",
+            "start_date": "2025-09-01",
+            "end_date": "2026-09-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 44,
+        "fields": {
+            "project_name": "Project 44",
+            "description": "Description for project 44",
+            "budget": "97000.00",
+            "start_date": "2025-10-01",
+            "end_date": "2026-10-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 45,
+        "fields": {
+            "project_name": "Project 45",
+            "description": "Description for project 45",
+            "budget": "98000.00",
+            "start_date": "2025-11-01",
+            "end_date": "2026-11-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 46,
+        "fields": {
+            "project_name": "Project 46",
+            "description": "Description for project 46",
+            "budget": "99000.00",
+            "start_date": "2025-12-01",
+            "end_date": "2026-12-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 47,
+        "fields": {
+            "project_name": "Project 47",
+            "description": "Description for project 47",
+            "budget": "100000.00",
+            "start_date": "2026-01-01",
+            "end_date": "2027-01-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 48,
+        "fields": {
+            "project_name": "Project 48",
+            "description": "Description for project 48",
+            "budget": "101000.00",
+            "start_date": "2026-02-01",
+            "end_date": "2027-02-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 49,
+        "fields": {
+            "project_name": "Project 49",
+            "description": "Description for project 49",
+            "budget": "102000.00",
+            "start_date": "2026-03-01",
+            "end_date": "2027-03-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 50,
+        "fields": {
+            "project_name": "Project 50",
+            "description": "Description for project 50",
+            "budget": "103000.00",
+            "start_date": "2026-04-01",
+            "end_date": "2027-04-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 51,
+        "fields": {
+            "project_name": "Project 51",
+            "description": "Description for project 51",
+            "budget": "104000.00",
+            "start_date": "2026-05-01",
+            "end_date": "2027-05-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 52,
+        "fields": {
+            "project_name": "Project 52",
+            "description": "Description for project 52",
+            "budget": "105000.00",
+            "start_date": "2026-06-01",
+            "end_date": "2027-06-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 53,
+        "fields": {
+            "project_name": "Project 53",
+            "description": "Description for project 53",
+            "budget": "106000.00",
+            "start_date": "2026-07-01",
+            "end_date": "2027-07-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 54,
+        "fields": {
+            "project_name": "Project 54",
+            "description": "Description for project 54",
+            "budget": "107000.00",
+            "start_date": "2026-08-01",
+            "end_date": "2027-08-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 55,
+        "fields": {
+            "project_name": "Project 55",
+            "description": "Description for project 55",
+            "budget": "108000.00",
+            "start_date": "2026-09-01",
+            "end_date": "2027-09-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 56,
+        "fields": {
+            "project_name": "Project 56",
+            "description": "Description for project 56",
+            "budget": "109000.00",
+            "start_date": "2026-10-01",
+            "end_date": "2027-10-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 57,
+        "fields": {
+            "project_name": "Project 57",
+            "description": "Description for project 57",
+            "budget": "110000.00",
+            "start_date": "2026-11-01",
+            "end_date": "2027-11-01",
+            "status": 1
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 58,
+        "fields": {
+            "project_name": "Project 58",
+            "description": "Description for project 58",
+            "budget": "111000.00",
+            "start_date": "2026-12-01",
+            "end_date": "2027-12-01",
+            "status": 2
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 59,
+        "fields": {
+            "project_name": "Project 59",
+            "description": "Description for project 59",
+            "budget": "112000.00",
+            "start_date": "2027-01-01",
+            "end_date": "2028-01-01",
+            "status": 3
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 60,
+        "fields": {
+            "project_name": "Project 60",
+            "description": "Description for project 60",
+            "budget": "113000.00",
+            "start_date": "2027-02-01",
+            "end_date": "2028-02-01",
+            "status": 4
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 61,
+        "fields": {
+            "project_name": "Project 61",
+            "description": "Description for project 61",
+            "budget": "114000.00",
+            "start_date": "2027-03-01",
+            "end_date": "2028-03-01",
+            "status": 5
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 62,
+        "fields": {
+            "project_name": "Project 62",
+            "description": "Description for project 62",
+            "budget": "115000.00",
+            "start_date": "2027-04-01",
+            "end_date": "2028-04-01",
+            "status": 6
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 63,
+        "fields": {
+            "project_name": "Project 63",
+            "description": "Description for project 63",
+            "budget": "116000.00",
+            "start_date": "2027-05-01",
+            "end_date": "2028-05-01",
+            "status": 7
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 64,
+        "fields": {
+            "project_name": "Project 64",
+            "description": "Description for project 64",
+            "budget": "117000.00",
+            "start_date": "2027-06-01",
+            "end_date": "2028-06-01",
+            "status": 8
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 65,
+        "fields": {
+            "project_name": "Project 65",
+            "description": "Description for project 65",
+            "budget": "118000.00",
+            "start_date": "2027-07-01",
+            "end_date": "2028-07-01",
+            "status": 9
+        }
+    },
+    {
+        "model": "acounts.projects",
+        "pk": 66,
+        "fields": {
+            "project_name": "Project 66",
+            "description": "Description for project 66",
+            "budget": "119000.00",
+            "start_date": "2027-08-01",
+            "end_date": "2028-08-01",
+            "status": 10
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 1,
+        "fields": {
+            "staff_id": 3,
+            "project_id": 1,
+            "assignment_date": "2026-03-19",
+            "role": "Admin"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 2,
+        "fields": {
+            "staff_id": 7,
+            "project_id": 1,
+            "assignment_date": "2025-06-27",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 3,
+        "fields": {
+            "staff_id": 6,
+            "project_id": 2,
+            "assignment_date": "2023-01-29",
+            "role": "UI/UX designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 4,
+        "fields": {
+            "staff_id": 9,
+            "project_id": 5,
+            "assignment_date": "2025-06-18",
+            "role": "Full stack developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 5,
+        "fields": {
+            "staff_id": 2,
+            "project_id": 6,
+            "assignment_date": "2024-02-18",
+            "role": "Project_manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 6,
+        "fields": {
+            "staff_id": 6,
+            "project_id": 3,
+            "assignment_date": "2026-03-19",
+            "role": "backend developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 7,
+        "fields": {
+            "staff_id": 1,
+            "project_id": 1,
+            "assignment_date": "2023-07-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 8,
+        "fields": {
+            "staff_id": 2,
+            "project_id": 2,
+            "assignment_date": "2023-08-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 9,
+        "fields": {
+            "staff_id": 3,
+            "project_id": 3,
+            "assignment_date": "2023-09-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 10,
+        "fields": {
+            "staff_id": 4,
+            "project_id": 4,
+            "assignment_date": "2023-10-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 11,
+        "fields": {
+            "staff_id": 5,
+            "project_id": 5,
+            "assignment_date": "2023-11-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 12,
+        "fields": {
+            "staff_id": 6,
+            "project_id": 6,
+            "assignment_date": "2023-12-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 13,
+        "fields": {
+            "staff_id": 7,
+            "project_id": 7,
+            "assignment_date": "2024-01-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 14,
+        "fields": {
+            "staff_id": 8,
+            "project_id": 8,
+            "assignment_date": "2024-02-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 15,
+        "fields": {
+            "staff_id": 9,
+            "project_id": 9,
+            "assignment_date": "2024-03-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 16,
+        "fields": {
+            "staff_id": 10,
+            "project_id": 10,
+            "assignment_date": "2024-04-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 17,
+        "fields": {
+            "staff_id": 11,
+            "project_id": 11,
+            "assignment_date": "2024-05-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 18,
+        "fields": {
+            "staff_id": 12,
+            "project_id": 12,
+            "assignment_date": "2024-06-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 19,
+        "fields": {
+            "staff_id": 13,
+            "project_id": 13,
+            "assignment_date": "2024-07-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 20,
+        "fields": {
+            "staff_id": 14,
+            "project_id": 14,
+            "assignment_date": "2024-08-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 21,
+        "fields": {
+            "staff_id": 15,
+            "project_id": 15,
+            "assignment_date": "2024-09-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 22,
+        "fields": {
+            "staff_id": 16,
+            "project_id": 16,
+            "assignment_date": "2024-10-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 23,
+        "fields": {
+            "staff_id": 17,
+            "project_id": 17,
+            "assignment_date": "2024-11-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 24,
+        "fields": {
+            "staff_id": 18,
+            "project_id": 18,
+            "assignment_date": "2024-12-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 25,
+        "fields": {
+            "staff_id": 19,
+            "project_id": 19,
+            "assignment_date": "2025-01-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 26,
+        "fields": {
+            "staff_id": 20,
+            "project_id": 20,
+            "assignment_date": "2025-02-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 27,
+        "fields": {
+            "staff_id": 21,
+            "project_id": 21,
+            "assignment_date": "2025-03-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 28,
+        "fields": {
+            "staff_id": 22,
+            "project_id": 22,
+            "assignment_date": "2025-04-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 29,
+        "fields": {
+            "staff_id": 23,
+            "project_id": 23,
+            "assignment_date": "2025-05-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 30,
+        "fields": {
+            "staff_id": 24,
+            "project_id": 24,
+            "assignment_date": "2025-06-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 31,
+        "fields": {
+            "staff_id": 25,
+            "project_id": 25,
+            "assignment_date": "2025-07-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 32,
+        "fields": {
+            "staff_id": 26,
+            "project_id": 26,
+            "assignment_date": "2025-08-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 33,
+        "fields": {
+            "staff_id": 27,
+            "project_id": 27,
+            "assignment_date": "2025-09-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 34,
+        "fields": {
+            "staff_id": 28,
+            "project_id": 28,
+            "assignment_date": "2025-10-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 35,
+        "fields": {
+            "staff_id": 29,
+            "project_id": 29,
+            "assignment_date": "2025-11-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 36,
+        "fields": {
+            "staff_id": 30,
+            "project_id": 30,
+            "assignment_date": "2025-12-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 37,
+        "fields": {
+            "staff_id": 31,
+            "project_id": 31,
+            "assignment_date": "2026-01-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 38,
+        "fields": {
+            "staff_id": 32,
+            "project_id": 32,
+            "assignment_date": "2026-02-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 39,
+        "fields": {
+            "staff_id": 33,
+            "project_id": 33,
+            "assignment_date": "2026-03-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 40,
+        "fields": {
+            "staff_id": 34,
+            "project_id": 34,
+            "assignment_date": "2026-04-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 41,
+        "fields": {
+            "staff_id": 35,
+            "project_id": 35,
+            "assignment_date": "2026-05-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 42,
+        "fields": {
+            "staff_id": 36,
+            "project_id": 36,
+            "assignment_date": "2026-06-01",
+            "role": "Developer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 43,
+        "fields": {
+            "staff_id": 37,
+            "project_id": 37,
+            "assignment_date": "2026-07-01",
+            "role": "Tester"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 44,
+        "fields": {
+            "staff_id": 38,
+            "project_id": 38,
+            "assignment_date": "2026-08-01",
+            "role": "Manager"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 45,
+        "fields": {
+            "staff_id": 39,
+            "project_id": 39,
+            "assignment_date": "2026-09-01",
+            "role": "Designer"
+        }
+    },
+    {
+        "model": "acounts.project_assignment",
+        "pk": 46,
+        "fields": {
+            "staff_id": 40,
+            "project_id": 40,
+            "assignment_date": "2026-10-01",
+            "role": "Analyst"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 1,
+        "fields": {
+            "project_id": 1,
+            "task_name": "Design DB schema",
+            "assigned_to": 6,
+            "description": "Design the database schema for user management",
+            "created_date": "2026-01-13",
+            "status": "on hold",
+            "due_date": "2026-07-02",
+            "completed_date": "2026-07-02"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 2,
+        "fields": {
+            "project_id": 3,
+            "task_name": "Build login API",
+            "assigned_to": 5,
+            "description": "Implement JWT-based authentication API",
+            "created_date": "2022-07-06",
+            "status": "completed",
+            "due_date": "2024-02-28",
+            "completed_date": "2026-07-16"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 3,
+        "fields": {
+            "project_id": 4,
+            "task_name": "Payment Gateway",
+            "assigned_to": 6,
+            "description": "Integrate Stripe payment gateway",
+            "created_date": "2026-02-01",
+            "status": "in progress",
+            "due_date": "2021-02-19",
+            "completed_date": "2021-02-02"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 4,
+        "fields": {
+            "project_id": 2,
+            "task_name": "UI mockups",
+            "assigned_to": 3,
+            "description": "Create Figma mockups for mobile app screens",
+            "created_date": "2026-07-05",
+            "status": "not started",
+            "due_date": "2022-07-13",
+            "completed_date": "2026-07-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 5,
+        "fields": {
+            "project_id": 5,
+            "task_name": "security audit",
+            "assigned_to": 9,
+            "description": "Perform penetration testing on the app",
+            "created_date": "2023-02-05",
+            "status": "completed",
+            "due_date": "2024-07-13",
+            "completed_date": "2026-07-21"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 6,
+        "fields": {
+            "project_id": 5,
+            "task_name": "Generate reports",
+            "assigned_to": 7,
+            "description": "Perform penetration testing on the app",
+            "created_date": "2022-07-14",
+            "status": "cancelled",
+            "due_date": "2022-05-09",
+            "completed_date": "2026-07-16"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 7,
+        "fields": {
+            "project_id": 4,
+            "task_name": "Build login API",
+            "assigned_to": 2,
+            "description": "Build monthly inventory report module",
+            "created_date": "2026-07-06",
+            "status": "completed",
+            "due_date": "2023-02-22",
+            "completed_date": "2025-07-03"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 8,
+        "fields": {
+            "project_id": 1,
+            "task_name": "Task 8",
+            "assigned_to": 1,
+            "description": "Description for task 8",
+            "created_date": "2023-08-01",
+            "status": "Pending",
+            "due_date": "2024-08-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 9,
+        "fields": {
+            "project_id": 2,
+            "task_name": "Task 9",
+            "assigned_to": 2,
+            "description": "Description for task 9",
+            "created_date": "2023-09-01",
+            "status": "In Progress",
+            "due_date": "2024-09-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 10,
+        "fields": {
+            "project_id": 3,
+            "task_name": "Task 10",
+            "assigned_to": 3,
+            "description": "Description for task 10",
+            "created_date": "2023-10-01",
+            "status": "Completed",
+            "due_date": "2024-10-01",
+            "completed_date": "2024-09-15"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 11,
+        "fields": {
+            "project_id": 4,
+            "task_name": "Task 11",
+            "assigned_to": 4,
+            "description": "Description for task 11",
+            "created_date": "2023-11-01",
+            "status": "Pending",
+            "due_date": "2024-11-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 12,
+        "fields": {
+            "project_id": 5,
+            "task_name": "Task 12",
+            "assigned_to": 5,
+            "description": "Description for task 12",
+            "created_date": "2023-12-01",
+            "status": "In Progress",
+            "due_date": "2024-12-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 13,
+        "fields": {
+            "project_id": 6,
+            "task_name": "Task 13",
+            "assigned_to": 6,
+            "description": "Description for task 13",
+            "created_date": "2024-01-01",
+            "status": "Completed",
+            "due_date": "2025-01-01",
+            "completed_date": "2024-12-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 14,
+        "fields": {
+            "project_id": 7,
+            "task_name": "Task 14",
+            "assigned_to": 7,
+            "description": "Description for task 14",
+            "created_date": "2024-02-01",
+            "status": "Pending",
+            "due_date": "2025-02-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 15,
+        "fields": {
+            "project_id": 8,
+            "task_name": "Task 15",
+            "assigned_to": 8,
+            "description": "Description for task 15",
+            "created_date": "2024-03-01",
+            "status": "In Progress",
+            "due_date": "2025-03-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 16,
+        "fields": {
+            "project_id": 9,
+            "task_name": "Task 16",
+            "assigned_to": 9,
+            "description": "Description for task 16",
+            "created_date": "2024-04-01",
+            "status": "Completed",
+            "due_date": "2025-04-01",
+            "completed_date": "2025-03-25"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 17,
+        "fields": {
+            "project_id": 10,
+            "task_name": "Task 17",
+            "assigned_to": 10,
+            "description": "Description for task 17",
+            "created_date": "2024-05-01",
+            "status": "Pending",
+            "due_date": "2025-05-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 18,
+        "fields": {
+            "project_id": 1,
+            "task_name": "Task 18",
+            "assigned_to": 1,
+            "description": "Description for task 18",
+            "created_date": "2024-05-01",
+            "status": "Pending",
+            "due_date": "2025-05-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 19,
+        "fields": {
+            "project_id": 2,
+            "task_name": "Task 19",
+            "assigned_to": 2,
+            "description": "Description for task 19",
+            "created_date": "2024-06-01",
+            "status": "In Progress",
+            "due_date": "2025-06-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 20,
+        "fields": {
+            "project_id": 3,
+            "task_name": "Task 20",
+            "assigned_to": 3,
+            "description": "Description for task 20",
+            "created_date": "2024-07-01",
+            "status": "Completed",
+            "due_date": "2025-07-01",
+            "completed_date": "2025-04-15"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 21,
+        "fields": {
+            "project_id": 4,
+            "task_name": "Task 21",
+            "assigned_to": 4,
+            "description": "Description for task 21",
+            "created_date": "2024-08-01",
+            "status": "Pending",
+            "due_date": "2025-08-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 22,
+        "fields": {
+            "project_id": 5,
+            "task_name": "Task 22",
+            "assigned_to": 5,
+            "description": "Description for task 22",
+            "created_date": "2024-09-01",
+            "status": "In Progress",
+            "due_date": "2025-09-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 23,
+        "fields": {
+            "project_id": 6,
+            "task_name": "Task 23",
+            "assigned_to": 6,
+            "description": "Description for task 23",
+            "created_date": "2024-10-01",
+            "status": "Completed",
+            "due_date": "2025-10-01",
+            "completed_date": "2025-12-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 24,
+        "fields": {
+            "project_id": 7,
+            "task_name": "Task 24",
+            "assigned_to": 7,
+            "description": "Description for task 24",
+            "created_date": "2024-11-01",
+            "status": "Pending",
+            "due_date": "2025-11-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 25,
+        "fields": {
+            "project_id": 8,
+            "task_name": "Task 25",
+            "assigned_to": 8,
+            "description": "Description for task 25",
+            "created_date": "2024-12-01",
+            "status": "In Progress",
+            "due_date": "2025-12-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 26,
+        "fields": {
+            "project_id": 9,
+            "task_name": "Task 26",
+            "assigned_to": 9,
+            "description": "Description for task 26",
+            "created_date": "2025-01-01",
+            "status": "Completed",
+            "due_date": "2026-01-01",
+            "completed_date": "2026-03-25"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 27,
+        "fields": {
+            "project_id": 10,
+            "task_name": "Task 27",
+            "assigned_to": 10,
+            "description": "Description for task 27",
+            "created_date": "2025-02-01",
+            "status": "Pending",
+            "due_date": "2026-02-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 28,
+        "fields": {
+            "project_id": 11,
+            "task_name": "Task 28",
+            "assigned_to": 11,
+            "description": "Description for task 28",
+            "created_date": "2025-03-01",
+            "status": "Pending",
+            "due_date": "2026-03-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 29,
+        "fields": {
+            "project_id": 12,
+            "task_name": "Task 29",
+            "assigned_to": 12,
+            "description": "Description for task 29",
+            "created_date": "2025-04-01",
+            "status": "In Progress",
+            "due_date": "2026-04-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 30,
+        "fields": {
+            "project_id": 13,
+            "task_name": "Task 30",
+            "assigned_to": 13,
+            "description": "Description for task 30",
+            "created_date": "2025-05-01",
+            "status": "Completed",
+            "due_date": "2026-05-01",
+            "completed_date": "2026-02-15"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 31,
+        "fields": {
+            "project_id": 14,
+            "task_name": "Task 31",
+            "assigned_to": 14,
+            "description": "Description for task 31",
+            "created_date": "2025-06-01",
+            "status": "Pending",
+            "due_date": "2026-06-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 32,
+        "fields": {
+            "project_id": 15,
+            "task_name": "Task 32",
+            "assigned_to": 15,
+            "description": "Description for task 32",
+            "created_date": "2025-07-01",
+            "status": "In Progress",
+            "due_date": "2026-07-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 33,
+        "fields": {
+            "project_id": 16,
+            "task_name": "Task 33",
+            "assigned_to": 16,
+            "description": "Description for task 33",
+            "created_date": "2025-08-01",
+            "status": "Completed",
+            "due_date": "2026-08-01",
+            "completed_date": "2026-05-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 34,
+        "fields": {
+            "project_id": 17,
+            "task_name": "Task 34",
+            "assigned_to": 17,
+            "description": "Description for task 34",
+            "created_date": "2025-09-01",
+            "status": "Pending",
+            "due_date": "2026-09-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 35,
+        "fields": {
+            "project_id": 18,
+            "task_name": "Task 35",
+            "assigned_to": 18,
+            "description": "Description for task 35",
+            "created_date": "2025-10-01",
+            "status": "In Progress",
+            "due_date": "2026-10-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 36,
+        "fields": {
+            "project_id": 19,
+            "task_name": "Task 36",
+            "assigned_to": 19,
+            "description": "Description for task 36",
+            "created_date": "2025-11-01",
+            "status": "Completed",
+            "due_date": "2026-11-01",
+            "completed_date": "2026-08-25"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 37,
+        "fields": {
+            "project_id": 20,
+            "task_name": "Task 37",
+            "assigned_to": 20,
+            "description": "Description for task 37",
+            "created_date": "2025-12-01",
+            "status": "Pending",
+            "due_date": "2026-12-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 38,
+        "fields": {
+            "project_id": 21,
+            "task_name": "Task 38",
+            "assigned_to": 21,
+            "description": "Description for task 38",
+            "created_date": "2026-01-01",
+            "status": "Pending",
+            "due_date": "2027-01-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 39,
+        "fields": {
+            "project_id": 22,
+            "task_name": "Task 39",
+            "assigned_to": 22,
+            "description": "Description for task 39",
+            "created_date": "2026-02-01",
+            "status": "In Progress",
+            "due_date": "2027-02-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 40,
+        "fields": {
+            "project_id": 23,
+            "task_name": "Task 40",
+            "assigned_to": 23,
+            "description": "Description for task 40",
+            "created_date": "2026-03-01",
+            "status": "Completed",
+            "due_date": "2027-03-01",
+            "completed_date": "2026-12-15"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 41,
+        "fields": {
+            "project_id": 24,
+            "task_name": "Task 41",
+            "assigned_to": 24,
+            "description": "Description for task 41",
+            "created_date": "2026-04-01",
+            "status": "Pending",
+            "due_date": "2027-04-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 42,
+        "fields": {
+            "project_id": 25,
+            "task_name": "Task 42",
+            "assigned_to": 25,
+            "description": "Description for task 42",
+            "created_date": "2026-05-01",
+            "status": "In Progress",
+            "due_date": "2027-05-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 43,
+        "fields": {
+            "project_id": 26,
+            "task_name": "Task 43",
+            "assigned_to": 26,
+            "description": "Description for task 43",
+            "created_date": "2026-06-01",
+            "status": "Completed",
+            "due_date": "2027-06-01",
+            "completed_date": "2027-03-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 44,
+        "fields": {
+            "project_id": 27,
+            "task_name": "Task 44",
+            "assigned_to": 27,
+            "description": "Description for task 44",
+            "created_date": "2026-07-01",
+            "status": "Pending",
+            "due_date": "2027-07-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 45,
+        "fields": {
+            "project_id": 28,
+            "task_name": "Task 45",
+            "assigned_to": 28,
+            "description": "Description for task 45",
+            "created_date": "2026-08-01",
+            "status": "In Progress",
+            "due_date": "2027-08-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 46,
+        "fields": {
+            "project_id": 29,
+            "task_name": "Task 46",
+            "assigned_to": 29,
+            "description": "Description for task 46",
+            "created_date": "2026-09-01",
+            "status": "Completed",
+            "due_date": "2027-09-01",
+            "completed_date": "2027-06-25"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 47,
+        "fields": {
+            "project_id": 30,
+            "task_name": "Task 47",
+            "assigned_to": 30,
+            "description": "Description for task 47",
+            "created_date": "2026-10-01",
+            "status": "Pending",
+            "due_date": "2027-10-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 48,
+        "fields": {
+            "project_id": 31,
+            "task_name": "Task 48",
+            "assigned_to": 31,
+            "description": "Description for task 48",
+            "created_date": "2026-11-01",
+            "status": "Pending",
+            "due_date": "2027-11-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 49,
+        "fields": {
+            "project_id": 32,
+            "task_name": "Task 49",
+            "assigned_to": 32,
+            "description": "Description for task 49",
+            "created_date": "2026-12-01",
+            "status": "In Progress",
+            "due_date": "2027-12-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 50,
+        "fields": {
+            "project_id": 33,
+            "task_name": "Task 50",
+            "assigned_to": 33,
+            "description": "Description for task 50",
+            "created_date": "2027-01-01",
+            "status": "Completed",
+            "due_date": "2028-01-01",
+            "completed_date": "2027-12-15"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 51,
+        "fields": {
+            "project_id": 34,
+            "task_name": "Task 51",
+            "assigned_to": 34,
+            "description": "Description for task 51",
+            "created_date": "2027-02-01",
+            "status": "Pending",
+            "due_date": "2028-02-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 52,
+        "fields": {
+            "project_id": 35,
+            "task_name": "Task 52",
+            "assigned_to": 35,
+            "description": "Description for task 52",
+            "created_date": "2027-03-01",
+            "status": "In Progress",
+            "due_date": "2028-03-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 53,
+        "fields": {
+            "project_id": 36,
+            "task_name": "Task 53",
+            "assigned_to": 36,
+            "description": "Description for task 53",
+            "created_date": "2027-04-01",
+            "status": "Completed",
+            "due_date": "2028-04-01",
+            "completed_date": "2028-03-20"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 54,
+        "fields": {
+            "project_id": 37,
+            "task_name": "Task 54",
+            "assigned_to": 37,
+            "description": "Description for task 54",
+            "created_date": "2027-05-01",
+            "status": "Pending",
+            "due_date": "2028-05-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 55,
+        "fields": {
+            "project_id": 38,
+            "task_name": "Task 55",
+            "assigned_to": 38,
+            "description": "Description for task 55",
+            "created_date": "2027-06-01",
+            "status": "In Progress",
+            "due_date": "2028-06-01",
+            "completed_date": null
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 56,
+        "fields": {
+            "project_id": 39,
+            "task_name": "Task 56",
+            "assigned_to": 39,
+            "description": "Description for task 56",
+            "created_date": "2027-07-01",
+            "status": "Completed",
+            "due_date": "2028-07-01",
+            "completed_date": "2028-06-25"
+        }
+    },
+    {
+        "model": "acounts.task",
+        "pk": 57,
+        "fields": {
+            "project_id": 40,
+            "task_name": "Task 57",
+            "assigned_to": 40,
+            "description": "Description for task 57",
+            "created_date": "2027-08-01",
+            "status": "Pending",
+            "due_date": "2028-08-01",
+            "completed_date": null
+        }
+    },
+    { "model": "acounts.department", "pk": 1, "fields": { "dp_name": "IT" } },
+    { "model": "acounts.department", "pk": 2, "fields": { "dp_name": "IS" } },
+    { "model": "acounts.department", "pk": 3, "fields": { "dp_name": "SE" } },
+    {
+        "model": "acounts.department",
+        "pk": 4,
+        "fields": { "dp_name": "Physics" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 5,
+        "fields": { "dp_name": "Chemistry" }
+    },
+    { "model": "acounts.department", "pk": 6, "fields": { "dp_name": "Math" } },
+    {
+        "model": "acounts.department",
+        "pk": 7,
+        "fields": { "dp_name": "Psychology" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 8,
+        "fields": { "dp_name": "Biology" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 9,
+        "fields": { "dp_name": "Pharmacy" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 10,
+        "fields": { "dp_name": "Agriculture" }
+    },
+    { "model": "acounts.department", "pk": 11, "fields": { "dp_name": "Web" } },
+    {
+        "model": "acounts.department",
+        "pk": 12,
+        "fields": { "dp_name": "Database" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 13,
+        "fields": { "dp_name": "Network" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 14,
+        "fields": { "dp_name": "Human Resources" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 15,
+        "fields": { "dp_name": "Engineering" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 16,
+        "fields": { "dp_name": "Marketing" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 17,
+        "fields": { "dp_name": "Sales" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 18,
+        "fields": { "dp_name": "Finance" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 19,
+        "fields": { "dp_name": "Operations" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 20,
+        "fields": { "dp_name": "Legal" }
+    },
+    {
+        "model": "acounts.department",
+        "pk": 21,
+        "fields": { "dp_name": "Customer Support" }
+    },
+    { "model": "acounts.department", "pk": 22, "fields": { "dp_name": "R&D" } },
+    {
+        "model": "acounts.department",
+        "pk": 23,
+        "fields": { "dp_name": "Product Management" }
+    },
+    { "model": "acounts.jobs", "pk": 3, "fields": { "job": "manager" } },
+    { "model": "acounts.jobs", "pk": 4, "fields": { "job": "developer" } },
+    { "model": "acounts.jobs", "pk": 5, "fields": { "job": "co_developer" } },
+    { "model": "acounts.jobs", "pk": 6, "fields": { "job": "supervisor" } },
+    { "model": "acounts.jobs", "pk": 7, "fields": { "job": "headmaster" } },
+    { "model": "acounts.jobs", "pk": 8, "fields": { "job": "marketer" } },
+    {
+        "model": "acounts.jobs",
+        "pk": 9,
+        "fields": { "job": "sales_assistant" }
+    },
+    { "model": "acounts.jobs", "pk": 10, "fields": { "job": "technisian" } },
+    { "model": "acounts.jobs", "pk": 11, "fields": { "job": "chef" } },
+    { "model": "acounts.jobs", "pk": 12, "fields": { "job": "cook" } },
+    { "model": "acounts.jobs", "pk": 13, "fields": { "job": "waiter" } },
+    { "model": "acounts.jobs", "pk": 14, "fields": { "job": "guard" } },
+    { "model": "acounts.jobs", "pk": 15, "fields": { "job": "chairman" } },
+    {
+        "model": "acounts.jobs",
+        "pk": 16,
+        "fields": { "job": "Marketing Manager" }
+    },
+    { "model": "acounts.jobs", "pk": 17, "fields": { "job": "Sales Rep" } },
+    { "model": "acounts.jobs", "pk": 18, "fields": { "job": "Accountant" } },
+    { "model": "acounts.jobs", "pk": 19, "fields": { "job": "Ops Manager" } },
+    { "model": "acounts.jobs", "pk": 20, "fields": { "job": "Lawyer" } },
+    { "model": "acounts.jobs", "pk": 21, "fields": { "job": "Support Agent" } },
+    { "model": "acounts.jobs", "pk": 22, "fields": { "job": "Researcher" } },
+    {
+        "model": "acounts.jobs",
+        "pk": 23,
+        "fields": { "job": "Product Manager" }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$12QqFQdn8btQeWrQ410JUV$LjeMp8V1oEjJO0e4NYPR3mEZ54Rp0lkT8hi0fsaFyHY=",
+            "last_login": "2026-07-02T07:20:33.425Z",
+            "name": "alireza",
+            "last_name": "rezaiee",
+            "birth_date": "2000-09-04",
+            "email": "alireza@company.com",
+            "phone": "0790060429",
+            "salary": "5000.00",
+            "department": 1,
+            "job": null,
+            "hire_date": "2026-06-30",
+            "is_deleted": false,
+            "created_date": "2026-06-30",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$JAYFASZn2DwAEQH0t9bl7C$CCN+uCnpufUmBVWKzsu5flP6V9vJ2X9wk0ycmFuk8oo=",
+            "last_login": null,
+            "name": "Ali",
+            "last_name": "Rezaiee",
+            "birth_date": "1990-02-03",
+            "email": "ali@company.com",
+            "phone": "0748789879",
+            "salary": "5000.00",
+            "department": 12,
+            "job": 4,
+            "hire_date": "2026-06-30",
+            "is_deleted": false,
+            "created_date": "2026-06-30",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$T6Fw507eu23fqvehgqn0O1$ZoEccCRhBigLEJFls5d2cAX/6Z/z8nw+hsDT0MX9sAw=",
+            "last_login": null,
+            "name": "Ahmad",
+            "last_name": "Ahmadi",
+            "birth_date": "2000-08-05",
+            "email": "ahmad@company.com",
+            "phone": "0743678654",
+            "salary": "6000.00",
+            "department": 10,
+            "job": 13,
+            "hire_date": "2026-06-30",
+            "is_deleted": false,
+            "created_date": "2026-06-30",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$MJxwW00PGz57nh0UStsFpd$WQz9+M2WKAC6J3fACS8gND2Yqxb6wHZjQLd8oM1izW4=",
+            "last_login": null,
+            "name": "Sara",
+            "last_name": "Rahimi",
+            "birth_date": "2009-08-05",
+            "email": "sara@company.com",
+            "phone": "0796543278",
+            "salary": "7000.00",
+            "department": 11,
+            "job": 15,
+            "hire_date": "2026-06-30",
+            "is_deleted": false,
+            "created_date": "2026-06-30",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$IyczdoASXHq2WpkB0gELZ7$EoMDCGXanDmUQJL5ejuROrg1UUVMWMy6/ejWfrSyB30=",
+            "last_login": null,
+            "name": "Rahim",
+            "last_name": "Rahimi",
+            "birth_date": "2008-06-16",
+            "email": "rahim@company.com",
+            "phone": "0754321876",
+            "salary": "8000.00",
+            "department": 5,
+            "job": 8,
+            "hire_date": "2026-06-30",
+            "is_deleted": false,
+            "created_date": "2026-06-30",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$46bbx70mQjryhRwCSQeJHT$/RAm9/zZZPCmHRk7AyZ3lksrKy2z3uiYV3bO43gAqDM=",
+            "last_login": null,
+            "name": "Hassan",
+            "last_name": "Hakimi",
+            "birth_date": "2007-07-11",
+            "email": "hassan@company.com",
+            "phone": "0767676758",
+            "salary": "8000.00",
+            "department": 12,
+            "job": 6,
+            "hire_date": "2026-07-02",
+            "is_deleted": false,
+            "created_date": "2026-07-02",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$dH1SeM96K9Fv25uvc6AqJ9$8OIPOTXyTzurpj2Bsp5cDcWbrOj0JwOvjQ6/+xI7Rho=",
+            "last_login": null,
+            "name": "Fahim",
+            "last_name": "Rezaiee",
+            "birth_date": "2009-07-02",
+            "email": "fahim@company.com",
+            "phone": "0790073847",
+            "salary": "2000.00",
+            "department": 10,
+            "job": 10,
+            "hire_date": "2026-07-02",
+            "is_deleted": false,
+            "created_date": "2026-07-02",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$dS5jYGdgjUlGYmQfWPP3un$bR8U15KSK5SjoRuBHXMEXaWyoLj1yTX84eZqv9vNFkw=",
+            "last_login": null,
+            "name": "Jamshed",
+            "last_name": "Hafizi",
+            "birth_date": "2002-07-20",
+            "email": "jamshed@company.com",
+            "phone": "0782342889",
+            "salary": "8000.00",
+            "department": 2,
+            "job": 7,
+            "hire_date": "2026-07-02",
+            "is_deleted": false,
+            "created_date": "2026-07-02",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$1200000$LWi2hLhmUL3IiwmRRi5Qwv$v40H7Ui3hlS+52NrNP+3lKJdASXkbKuXj4LLuzF42Tk=",
+            "last_login": null,
+            "name": "Mohammad",
+            "last_name": "Hashimi",
+            "birth_date": "2007-07-28",
+            "email": "mohammad@company.com",
+            "phone": "0749823782",
+            "salary": "8000.00",
+            "department": 3,
+            "job": 3,
+            "hire_date": "2026-07-02",
+            "is_deleted": false,
+            "created_date": "2026-07-02",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User10",
+            "last_name": "Last10",
+            "birth_date": "1990-01-10",
+            "email": "user10@example.com",
+            "phone": "07999990010",
+            "salary": "50000.00",
+            "department": 1,
+            "job": 3,
+            "hire_date": "2023-01-10",
+            "is_deleted": false,
+            "created_date": "2023-01-10",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User11",
+            "last_name": "Last11",
+            "birth_date": "1991-02-11",
+            "email": "user11@example.com",
+            "phone": "07999990011",
+            "salary": "51000.00",
+            "department": 2,
+            "job": 4,
+            "hire_date": "2023-02-11",
+            "is_deleted": false,
+            "created_date": "2023-02-11",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User12",
+            "last_name": "Last12",
+            "birth_date": "1992-03-12",
+            "email": "user12@example.com",
+            "phone": "07999990012",
+            "salary": "52000.00",
+            "department": 3,
+            "job": 5,
+            "hire_date": "2023-03-12",
+            "is_deleted": false,
+            "created_date": "2023-03-12",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User13",
+            "last_name": "Last13",
+            "birth_date": "1993-04-13",
+            "email": "user13@example.com",
+            "phone": "07999990013",
+            "salary": "53000.00",
+            "department": 4,
+            "job": 6,
+            "hire_date": "2023-04-13",
+            "is_deleted": false,
+            "created_date": "2023-04-13",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User14",
+            "last_name": "Last14",
+            "birth_date": "1994-05-14",
+            "email": "user14@example.com",
+            "phone": "07999990014",
+            "salary": "54000.00",
+            "department": 5,
+            "job": 7,
+            "hire_date": "2023-05-14",
+            "is_deleted": false,
+            "created_date": "2023-05-14",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 15,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User15",
+            "last_name": "Last15",
+            "birth_date": "1995-06-15",
+            "email": "user15@example.com",
+            "phone": "07999990015",
+            "salary": "55000.00",
+            "department": 6,
+            "job": 8,
+            "hire_date": "2023-06-15",
+            "is_deleted": false,
+            "created_date": "2023-06-15",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 16,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User16",
+            "last_name": "Last16",
+            "birth_date": "1996-07-16",
+            "email": "user16@example.com",
+            "phone": "07999990016",
+            "salary": "56000.00",
+            "department": 7,
+            "job": 9,
+            "hire_date": "2023-07-16",
+            "is_deleted": false,
+            "created_date": "2023-07-16",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 17,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User17",
+            "last_name": "Last17",
+            "birth_date": "1997-08-17",
+            "email": "user17@example.com",
+            "phone": "07999990017",
+            "salary": "57000.00",
+            "department": 8,
+            "job": 10,
+            "hire_date": "2023-08-17",
+            "is_deleted": false,
+            "created_date": "2023-08-17",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User18",
+            "last_name": "Last18",
+            "birth_date": "1998-09-18",
+            "email": "user18@example.com",
+            "phone": "07999990018",
+            "salary": "58000.00",
+            "department": 9,
+            "job": 11,
+            "hire_date": "2023-09-18",
+            "is_deleted": false,
+            "created_date": "2023-09-18",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User19",
+            "last_name": "Last19",
+            "birth_date": "1999-10-19",
+            "email": "user19@example.com",
+            "phone": "07999990019",
+            "salary": "59000.00",
+            "department": 10,
+            "job": 12,
+            "hire_date": "2023-10-19",
+            "is_deleted": false,
+            "created_date": "2023-10-19",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 20,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User20",
+            "last_name": "Last20",
+            "birth_date": "1990-01-20",
+            "email": "user20@example.com",
+            "phone": "07999990020",
+            "salary": "60000.00",
+            "department": 11,
+            "job": 13,
+            "hire_date": "2023-01-20",
+            "is_deleted": false,
+            "created_date": "2023-01-20",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 21,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User21",
+            "last_name": "Last21",
+            "birth_date": "1991-02-21",
+            "email": "user21@example.com",
+            "phone": "07999990021",
+            "salary": "61000.00",
+            "department": 12,
+            "job": 14,
+            "hire_date": "2023-02-21",
+            "is_deleted": false,
+            "created_date": "2023-02-21",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User22",
+            "last_name": "Last22",
+            "birth_date": "1992-03-22",
+            "email": "user22@example.com",
+            "phone": "07999990022",
+            "salary": "62000.00",
+            "department": 13,
+            "job": 15,
+            "hire_date": "2023-03-22",
+            "is_deleted": false,
+            "created_date": "2023-03-22",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User23",
+            "last_name": "Last23",
+            "birth_date": "1993-04-23",
+            "email": "user23@example.com",
+            "phone": "07999990023",
+            "salary": "63000.00",
+            "department": 14,
+            "job": 16,
+            "hire_date": "2023-04-23",
+            "is_deleted": false,
+            "created_date": "2023-04-23",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User24",
+            "last_name": "Last24",
+            "birth_date": "1994-05-24",
+            "email": "user24@example.com",
+            "phone": "07999990024",
+            "salary": "64000.00",
+            "department": 15,
+            "job": 17,
+            "hire_date": "2023-05-24",
+            "is_deleted": false,
+            "created_date": "2023-05-24",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User25",
+            "last_name": "Last25",
+            "birth_date": "1995-06-25",
+            "email": "user25@example.com",
+            "phone": "07999990025",
+            "salary": "65000.00",
+            "department": 16,
+            "job": 18,
+            "hire_date": "2023-06-25",
+            "is_deleted": false,
+            "created_date": "2023-06-25",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 26,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User26",
+            "last_name": "Last26",
+            "birth_date": "1996-07-26",
+            "email": "user26@example.com",
+            "phone": "07999990026",
+            "salary": "66000.00",
+            "department": 17,
+            "job": 19,
+            "hire_date": "2023-07-26",
+            "is_deleted": false,
+            "created_date": "2023-07-26",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User27",
+            "last_name": "Last27",
+            "birth_date": "1997-08-27",
+            "email": "user27@example.com",
+            "phone": "07999990027",
+            "salary": "67000.00",
+            "department": 18,
+            "job": 20,
+            "hire_date": "2023-08-27",
+            "is_deleted": false,
+            "created_date": "2023-08-27",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 28,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User28",
+            "last_name": "Last28",
+            "birth_date": "1998-09-28",
+            "email": "user28@example.com",
+            "phone": "07999990028",
+            "salary": "68000.00",
+            "department": 19,
+            "job": 21,
+            "hire_date": "2023-09-28",
+            "is_deleted": false,
+            "created_date": "2023-09-28",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 29,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User29",
+            "last_name": "Last29",
+            "birth_date": "1999-10-29",
+            "email": "user29@example.com",
+            "phone": "07999990029",
+            "salary": "69000.00",
+            "department": 20,
+            "job": 22,
+            "hire_date": "2023-10-29",
+            "is_deleted": false,
+            "created_date": "2023-10-29",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 30,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User30",
+            "last_name": "Last30",
+            "birth_date": "1990-01-30",
+            "email": "user30@example.com",
+            "phone": "07999990030",
+            "salary": "70000.00",
+            "department": 1,
+            "job": 3,
+            "hire_date": "2023-01-30",
+            "is_deleted": false,
+            "created_date": "2023-01-30",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 31,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User31",
+            "last_name": "Last31",
+            "birth_date": "1991-02-01",
+            "email": "user31@example.com",
+            "phone": "07999990031",
+            "salary": "71000.00",
+            "department": 2,
+            "job": 4,
+            "hire_date": "2023-02-01",
+            "is_deleted": false,
+            "created_date": "2023-02-01",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 32,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User32",
+            "last_name": "Last32",
+            "birth_date": "1992-03-02",
+            "email": "user32@example.com",
+            "phone": "07999990032",
+            "salary": "72000.00",
+            "department": 3,
+            "job": 5,
+            "hire_date": "2023-03-02",
+            "is_deleted": false,
+            "created_date": "2023-03-02",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 33,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User33",
+            "last_name": "Last33",
+            "birth_date": "1993-04-03",
+            "email": "user33@example.com",
+            "phone": "07999990033",
+            "salary": "73000.00",
+            "department": 4,
+            "job": 6,
+            "hire_date": "2023-04-03",
+            "is_deleted": false,
+            "created_date": "2023-04-03",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 34,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User34",
+            "last_name": "Last34",
+            "birth_date": "1994-05-04",
+            "email": "user34@example.com",
+            "phone": "07999990034",
+            "salary": "74000.00",
+            "department": 5,
+            "job": 7,
+            "hire_date": "2023-05-04",
+            "is_deleted": false,
+            "created_date": "2023-05-04",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 35,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User35",
+            "last_name": "Last35",
+            "birth_date": "1995-06-05",
+            "email": "user35@example.com",
+            "phone": "07999990035",
+            "salary": "75000.00",
+            "department": 6,
+            "job": 8,
+            "hire_date": "2023-06-05",
+            "is_deleted": false,
+            "created_date": "2023-06-05",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 36,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User36",
+            "last_name": "Last36",
+            "birth_date": "1996-07-06",
+            "email": "user36@example.com",
+            "phone": "07999990036",
+            "salary": "76000.00",
+            "department": 7,
+            "job": 9,
+            "hire_date": "2023-07-06",
+            "is_deleted": false,
+            "created_date": "2023-07-06",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 37,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User37",
+            "last_name": "Last37",
+            "birth_date": "1997-08-07",
+            "email": "user37@example.com",
+            "phone": "07999990037",
+            "salary": "77000.00",
+            "department": 8,
+            "job": 10,
+            "hire_date": "2023-08-07",
+            "is_deleted": false,
+            "created_date": "2023-08-07",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 38,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User38",
+            "last_name": "Last38",
+            "birth_date": "1998-09-08",
+            "email": "user38@example.com",
+            "phone": "07999990038",
+            "salary": "78000.00",
+            "department": 9,
+            "job": 11,
+            "hire_date": "2023-09-08",
+            "is_deleted": false,
+            "created_date": "2023-09-08",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 39,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User39",
+            "last_name": "Last39",
+            "birth_date": "1999-10-09",
+            "email": "user39@example.com",
+            "phone": "07999990039",
+            "salary": "79000.00",
+            "department": 10,
+            "job": 12,
+            "hire_date": "2023-10-09",
+            "is_deleted": false,
+            "created_date": "2023-10-09",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 40,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User40",
+            "last_name": "Last40",
+            "birth_date": "1990-04-10",
+            "email": "user40@example.com",
+            "phone": "07999990040",
+            "salary": "80000.00",
+            "department": 1,
+            "job": 3,
+            "hire_date": "2023-04-10",
+            "is_deleted": false,
+            "created_date": "2023-04-10",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 41,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User41",
+            "last_name": "Last41",
+            "birth_date": "1991-05-11",
+            "email": "user41@example.com",
+            "phone": "07999990041",
+            "salary": "81000.00",
+            "department": 2,
+            "job": 4,
+            "hire_date": "2023-05-11",
+            "is_deleted": false,
+            "created_date": "2023-05-11",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 42,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User42",
+            "last_name": "Last42",
+            "birth_date": "1992-06-12",
+            "email": "user42@example.com",
+            "phone": "07999990042",
+            "salary": "82000.00",
+            "department": 3,
+            "job": 5,
+            "hire_date": "2023-06-12",
+            "is_deleted": false,
+            "created_date": "2023-06-12",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 43,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User43",
+            "last_name": "Last43",
+            "birth_date": "1993-07-13",
+            "email": "user43@example.com",
+            "phone": "07999990043",
+            "salary": "83000.00",
+            "department": 4,
+            "job": 6,
+            "hire_date": "2023-07-13",
+            "is_deleted": false,
+            "created_date": "2023-07-13",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 44,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User44",
+            "last_name": "Last44",
+            "birth_date": "1994-08-14",
+            "email": "user44@example.com",
+            "phone": "07999990044",
+            "salary": "84000.00",
+            "department": 5,
+            "job": 7,
+            "hire_date": "2023-08-14",
+            "is_deleted": false,
+            "created_date": "2023-08-14",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 45,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User45",
+            "last_name": "Last45",
+            "birth_date": "1995-09-15",
+            "email": "user45@example.com",
+            "phone": "07999990045",
+            "salary": "85000.00",
+            "department": 6,
+            "job": 8,
+            "hire_date": "2023-09-15",
+            "is_deleted": false,
+            "created_date": "2023-09-15",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 46,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User46",
+            "last_name": "Last46",
+            "birth_date": "1996-10-16",
+            "email": "user46@example.com",
+            "phone": "07999990046",
+            "salary": "86000.00",
+            "department": 7,
+            "job": 9,
+            "hire_date": "2023-10-16",
+            "is_deleted": false,
+            "created_date": "2023-10-16",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 47,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User47",
+            "last_name": "Last47",
+            "birth_date": "1997-11-17",
+            "email": "user47@example.com",
+            "phone": "07999990047",
+            "salary": "87000.00",
+            "department": 8,
+            "job": 10,
+            "hire_date": "2023-11-17",
+            "is_deleted": false,
+            "created_date": "2023-11-17",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 48,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User48",
+            "last_name": "Last48",
+            "birth_date": "1998-12-18",
+            "email": "user48@example.com",
+            "phone": "07999990048",
+            "salary": "88000.00",
+            "department": 9,
+            "job": 11,
+            "hire_date": "2023-12-18",
+            "is_deleted": false,
+            "created_date": "2023-12-18",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.users",
+        "pk": 49,
+        "fields": {
+            "password": "pbkdf2_sha256$dummy",
+            "last_login": null,
+            "name": "User49",
+            "last_name": "Last49",
+            "birth_date": "1999-01-19",
+            "email": "user49@example.com",
+            "phone": "07999990049",
+            "salary": "89000.00",
+            "department": 10,
+            "job": 12,
+            "hire_date": "2023-01-19",
+            "is_deleted": false,
+            "created_date": "2023-01-19",
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "is_verified": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 4,
+        "fields": {
+            "user_id": 1,
+            "assignment_id": 6,
+            "reports_date": "2026-03-14",
+            "hours_worked": "8.00",
+            "work_description": "Designed ER diagram and normalized tables to 3NF"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 5,
+        "fields": {
+            "user_id": 2,
+            "assignment_id": 4,
+            "reports_date": "2022-03-15",
+            "hours_worked": "12.00",
+            "work_description": "Implemented JWT authentication endpoints for login and registration"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 6,
+        "fields": {
+            "user_id": 7,
+            "assignment_id": 4,
+            "reports_date": "2023-02-21",
+            "hours_worked": "13.00",
+            "work_description": "Reviewed UI mockups and provided technical feedback"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 7,
+        "fields": {
+            "user_id": 8,
+            "assignment_id": 4,
+            "reports_date": "2023-06-27",
+            "hours_worked": "9.00",
+            "work_description": "Created 12 screen mockups in Figma for iOS version"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 8,
+        "fields": {
+            "user_id": 7,
+            "assignment_id": 4,
+            "reports_date": "2022-09-26",
+            "hours_worked": "6.00",
+            "work_description": "Defined project scope, milestones, and resource allocation"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 9,
+        "fields": {
+            "user_id": 3,
+            "assignment_id": 3,
+            "reports_date": "2026-07-16",
+            "hours_worked": "8.00",
+            "work_description": "Built automated report generation module with"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 10,
+        "fields": {
+            "user_id": 8,
+            "assignment_id": 3,
+            "reports_date": "2026-07-02",
+            "hours_worked": "12.03",
+            "work_description": "Omnis in consequuntu"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 11,
+        "fields": {
+            "user_id": 1,
+            "assignment_id": 1,
+            "reports_date": "2024-07-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 11"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 12,
+        "fields": {
+            "user_id": 2,
+            "assignment_id": 2,
+            "reports_date": "2024-08-01",
+            "hours_worked": "7.50",
+            "work_description": "Work description for report 12"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 13,
+        "fields": {
+            "user_id": 3,
+            "assignment_id": 3,
+            "reports_date": "2024-09-01",
+            "hours_worked": "8.25",
+            "work_description": "Work description for report 13"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 14,
+        "fields": {
+            "user_id": 4,
+            "assignment_id": 4,
+            "reports_date": "2024-10-01",
+            "hours_worked": "6.00",
+            "work_description": "Work description for report 14"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 15,
+        "fields": {
+            "user_id": 5,
+            "assignment_id": 5,
+            "reports_date": "2024-11-01",
+            "hours_worked": "9.00",
+            "work_description": "Work description for report 15"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 16,
+        "fields": {
+            "user_id": 6,
+            "assignment_id": 6,
+            "reports_date": "2024-12-01",
+            "hours_worked": "7.00",
+            "work_description": "Work description for report 16"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 17,
+        "fields": {
+            "user_id": 7,
+            "assignment_id": 7,
+            "reports_date": "2025-01-01",
+            "hours_worked": "8.50",
+            "work_description": "Work description for report 17"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 18,
+        "fields": {
+            "user_id": 8,
+            "assignment_id": 8,
+            "reports_date": "2025-02-01",
+            "hours_worked": "7.75",
+            "work_description": "Work description for report 18"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 19,
+        "fields": {
+            "user_id": 9,
+            "assignment_id": 9,
+            "reports_date": "2025-03-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 19"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 20,
+        "fields": {
+            "user_id": 10,
+            "assignment_id": 10,
+            "reports_date": "2025-04-01",
+            "hours_worked": "6.50",
+            "work_description": "Work description for report 20"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 21,
+        "fields": {
+            "user_id": 11,
+            "assignment_id": 11,
+            "reports_date": "2025-05-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 21"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 22,
+        "fields": {
+            "user_id": 12,
+            "assignment_id": 12,
+            "reports_date": "2025-06-01",
+            "hours_worked": "7.50",
+            "work_description": "Work description for report 22"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 23,
+        "fields": {
+            "user_id": 13,
+            "assignment_id": 13,
+            "reports_date": "2025-07-01",
+            "hours_worked": "8.25",
+            "work_description": "Work description for report 23"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 24,
+        "fields": {
+            "user_id": 14,
+            "assignment_id": 14,
+            "reports_date": "2025-08-01",
+            "hours_worked": "6.00",
+            "work_description": "Work description for report 24"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 25,
+        "fields": {
+            "user_id": 15,
+            "assignment_id": 15,
+            "reports_date": "2025-09-01",
+            "hours_worked": "9.00",
+            "work_description": "Work description for report 25"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 26,
+        "fields": {
+            "user_id": 16,
+            "assignment_id": 16,
+            "reports_date": "2025-10-01",
+            "hours_worked": "7.00",
+            "work_description": "Work description for report 26"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 27,
+        "fields": {
+            "user_id": 17,
+            "assignment_id": 17,
+            "reports_date": "2025-11-01",
+            "hours_worked": "8.50",
+            "work_description": "Work description for report 27"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 28,
+        "fields": {
+            "user_id": 18,
+            "assignment_id": 18,
+            "reports_date": "2025-12-01",
+            "hours_worked": "7.75",
+            "work_description": "Work description for report 28"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 29,
+        "fields": {
+            "user_id": 19,
+            "assignment_id": 19,
+            "reports_date": "2026-01-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 29"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 30,
+        "fields": {
+            "user_id": 20,
+            "assignment_id": 20,
+            "reports_date": "2026-02-01",
+            "hours_worked": "6.50",
+            "work_description": "Work description for report 30"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 31,
+        "fields": {
+            "user_id": 21,
+            "assignment_id": 21,
+            "reports_date": "2026-03-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 31"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 32,
+        "fields": {
+            "user_id": 22,
+            "assignment_id": 22,
+            "reports_date": "2026-04-01",
+            "hours_worked": "7.50",
+            "work_description": "Work description for report 32"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 33,
+        "fields": {
+            "user_id": 23,
+            "assignment_id": 23,
+            "reports_date": "2026-05-01",
+            "hours_worked": "8.25",
+            "work_description": "Work description for report 33"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 34,
+        "fields": {
+            "user_id": 24,
+            "assignment_id": 24,
+            "reports_date": "2026-06-01",
+            "hours_worked": "6.00",
+            "work_description": "Work description for report 34"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 35,
+        "fields": {
+            "user_id": 25,
+            "assignment_id": 25,
+            "reports_date": "2026-07-01",
+            "hours_worked": "9.00",
+            "work_description": "Work description for report 35"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 36,
+        "fields": {
+            "user_id": 26,
+            "assignment_id": 26,
+            "reports_date": "2026-08-01",
+            "hours_worked": "7.00",
+            "work_description": "Work description for report 36"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 37,
+        "fields": {
+            "user_id": 27,
+            "assignment_id": 27,
+            "reports_date": "2026-09-01",
+            "hours_worked": "8.50",
+            "work_description": "Work description for report 37"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 38,
+        "fields": {
+            "user_id": 28,
+            "assignment_id": 28,
+            "reports_date": "2026-10-01",
+            "hours_worked": "7.75",
+            "work_description": "Work description for report 38"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 39,
+        "fields": {
+            "user_id": 29,
+            "assignment_id": 29,
+            "reports_date": "2026-11-01",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 39"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 40,
+        "fields": {
+            "user_id": 30,
+            "assignment_id": 30,
+            "reports_date": "2026-12-01",
+            "hours_worked": "6.50",
+            "work_description": "Work description for report 40"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 41,
+        "fields": {
+            "user_id": 31,
+            "assignment_id": 31,
+            "reports_date": "2026-01-15",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 41"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 42,
+        "fields": {
+            "user_id": 32,
+            "assignment_id": 32,
+            "reports_date": "2026-02-15",
+            "hours_worked": "7.50",
+            "work_description": "Work description for report 42"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 43,
+        "fields": {
+            "user_id": 33,
+            "assignment_id": 33,
+            "reports_date": "2026-03-15",
+            "hours_worked": "8.25",
+            "work_description": "Work description for report 43"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 44,
+        "fields": {
+            "user_id": 34,
+            "assignment_id": 34,
+            "reports_date": "2026-04-15",
+            "hours_worked": "6.00",
+            "work_description": "Work description for report 44"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 45,
+        "fields": {
+            "user_id": 35,
+            "assignment_id": 35,
+            "reports_date": "2026-05-15",
+            "hours_worked": "9.00",
+            "work_description": "Work description for report 45"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 46,
+        "fields": {
+            "user_id": 36,
+            "assignment_id": 36,
+            "reports_date": "2026-06-15",
+            "hours_worked": "7.00",
+            "work_description": "Work description for report 46"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 47,
+        "fields": {
+            "user_id": 37,
+            "assignment_id": 37,
+            "reports_date": "2026-07-15",
+            "hours_worked": "8.50",
+            "work_description": "Work description for report 47"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 48,
+        "fields": {
+            "user_id": 38,
+            "assignment_id": 38,
+            "reports_date": "2026-08-15",
+            "hours_worked": "7.75",
+            "work_description": "Work description for report 48"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 49,
+        "fields": {
+            "user_id": 39,
+            "assignment_id": 39,
+            "reports_date": "2026-09-15",
+            "hours_worked": "8.00",
+            "work_description": "Work description for report 49"
+        }
+    },
+    {
+        "model": "acounts.daily_work_report",
+        "pk": 50,
+        "fields": {
+            "user_id": 40,
+            "assignment_id": 40,
+            "reports_date": "2026-10-15",
+            "hours_worked": "6.50",
+            "work_description": "Work description for report 50"
+        }
+    }
+]

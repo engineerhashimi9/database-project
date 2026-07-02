@@ -42,7 +42,7 @@ class CustomUserAdmin(UserAdmin):
 
     )
 
-
+admin.site.register(Jobs)
 admin.site.register(Users, CustomUserAdmin)
 admin.site.register(Status)
 admin.site.register(Projects)

@@ -137,4 +137,4 @@ class Daily_work_report(models.Model):
     work_description = models.TextField()
 
     def __str__(self):
-        return f"{self.user.email} - {self.reports_date}"
+        return "None"
